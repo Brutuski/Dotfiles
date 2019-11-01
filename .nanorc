@@ -1,0 +1,12 @@
+include /usr/share/nano-syntax-highlighting/*.nanorc
+set autoindent
+set morespace
+set nohelp
+set tabsize 4
+set mouse
+set nonewlines
+set titlecolor white,normal
+set statuscolor white,normal
+set linenumbers
+set numbercolor cyan
+set breaklonglines

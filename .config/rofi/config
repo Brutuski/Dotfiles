@@ -1,0 +1,19 @@
+rofi.show-icons:            true
+rofi.modi:                  drun
+rofi.show-match:	    true
+rofi.drun-icon-theme:	    Papirus
+
+rofi.location:		    0
+rofi.lines:                 7
+rofi.line-padding:          5
+rofi.columns:		    2
+rofi.matching:              regex
+rofi.bw:                    0
+rofi.padding:               0
+rofi.separator-style:       none
+rofi.hide-scrollbar:        true
+rofi.line-margin:           0
+rofi.font:                  Hack Bold Nerd Font 12
+rofi.theme:		    ~/.config/rofi/themes/nord.rasi
+rofi.terminal:		    tilix
+
