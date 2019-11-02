@@ -1,5 +1,9 @@
 syntax enable
 
+"Line wrap and break
+set linebreak
+set wrap
+
 "Syntax highlighting
 filetype plugin indent on
 syntax on
