@@ -15,5 +15,5 @@ if [ "$discharging" = "Discharging" ]; then
 fi
 
 if [ "$full" = "Full" ]; then 
-	echo "Battery Full"
+	echo "Plugged In"
 fi

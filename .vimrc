@@ -35,6 +35,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'vim-scripts/indentpython.vim'
+Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -49,4 +51,16 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "Rainbow Parentheses
 let g:rainbow_active = 1
 
+"Vimtex settings
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimted_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
 
+"Snippets settings
+Plug 'sirver/ultisnips'
+let g:UtilSnipsDirectory='~/.vim/utilsnippets'
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
