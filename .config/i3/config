@@ -40,16 +40,20 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-#Launch Polybar during startup
+# Launch Polybar during startup
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-#Set Wallpaper using feh on startup
+# Compton
+# Shadows + corners
+exec --no-startup-id compton --corner-radius 15
+
+# Set Wallpaper using feh on startup
 exec_always ~/fehbg.sh
 
-#Enable tap to click
+# Enable tap to click
 exec_always xinput set-prop 13 314 1
 
-#LANGUAGE INPUT
+# LANGUAGE INPUT
 exec_always setxkbmap -layout us,de
 #setxkbmap -model pc105 -layout us,de -option grp:alt_`_toggle
 #bindsym $mod+ exec --no-startup-id setxkbmap -layout us,de
@@ -73,17 +77,17 @@ bindsym $mod+Return exec tilix
 # kill focused window
 bindsym $mod+Shift+q kill
 
-#Start rofi (a program launcher)
+# Start rofi (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
-#Lock screen using i3lock
+# Lock screen using i3lock
 bindsym $mod+F1 exec --no-startup-id i3lock -i ~/Documents/Chrome-Downloads/Lockscreen.png -p default -n
 
-#Screen brightness with light
+# Screen brightness with light
 bindsym $mod+Control+k exec light -A 10
 bindsym $mod+Control+j exec light -U 10
 
-#Always in floating mode
+# Always in floating mode
 #for_window [class="tilix"] floating enable
 for_window [class="Nautilus"] floating enable
 for_window [class="Gnome-calculator"] floating enable
@@ -91,7 +95,7 @@ for_window [class="gedit"] floating enable
 for_window [class="Transmission"] floating enable
 #for_window [class="Spotify"] floating enable
 
-#Take screenshot using scrot
+# Take screenshot using scrot
 bindsym Print exec scrot -e 'mv $f ~/Documents/Pictures'
 
 # Make the currently focused window a scratchpad
@@ -225,11 +229,3 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#bar {
-#       status_command i3status
-#}
-
-#default_border pixel
