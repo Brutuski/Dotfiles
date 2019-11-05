@@ -2,8 +2,8 @@
 
 count=0
 disconnected="Disconnected"
-wireless_connected="Connected"
-ethernet_connected="Connected"
+wireless_connected="Wifi Connected"
+ethernet_connected="Ethernet Connected"
 
 ID="$(ip link | awk '/state UP/ {print $2}')"
 
