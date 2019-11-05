@@ -45,7 +45,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Compton
 # Shadows + corners
-exec --no-startup-id compton -b --respect-prop-shadow
+exec --no-startup-id compton --corner-radius 15
 
 # Set Wallpaper using feh on startup
 exec_always ~/fehbg.sh
@@ -55,7 +55,7 @@ exec_always xinput set-prop 13 314 1
 
 # LANGUAGE INPUT
 exec_always setxkbmap -layout us,de
-exec --no-startup-id setxkbmap -option 'grp:alt_shift_toggle'
+exec --no-startup-id setxkbmap -option 'grp:alt_`_toggle'
 #setxkbmap -model pc105 -layout us,de -option grp:alt_`_toggle
 #bindsym $mod+ exec --no-startup-id setxkbmap -layout us,de
 
