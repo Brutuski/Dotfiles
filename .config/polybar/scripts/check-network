@@ -4,6 +4,7 @@ count=0
 disconnected="Disconnected"
 wireless_connected="Wifi Connected"
 ethernet_connected="Ethernet Connected"
+#usb_tethering="USB Tethering"
 
 ID="$(ip link | awk '/state UP/ {print $2}')"
 

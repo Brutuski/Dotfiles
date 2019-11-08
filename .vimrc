@@ -37,6 +37,9 @@ Plug 'plasticboy/vim-markdown'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'tmhedberg/SimpylFold'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
@@ -64,3 +67,37 @@ let g:UtilSnipsDirectory='~/.vim/utilsnippets'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+"Python Code Folding enable
+let g:SimpylFold_docstring_preview = 1
+
+"PEP-8 Python Indentation
+au BufNewFile,BufRead *.py
+"    \ set tabstop=4
+"    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+"Python highlight
+let python_highlight_all=1
+
+"Ale linting
+let g:ale_sign_error='!-!'
+let g:ale_sign_warning='--'
+"E & W colors
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+"Show in Statusline
+let g:airline#extensions#ale#enables=1
+"Error Message format
+let g:ale_echo_msg_error_str='E'
+let g:ale_echo_msg_warning_str='W'
+let g:ale_echo_msg_format='[%linter%] %s [%severity%]'
+"Only run on :w (saves battery)
+let g:ale_lint_on_text_changed='never'
+let g:ale_lint_on_insert_leave='never'
+let g:ale_lint_on_enter=0
+let g:ale_lint_on_save=1
