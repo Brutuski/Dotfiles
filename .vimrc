@@ -8,11 +8,28 @@ set wrap
 filetype plugin indent on
 syntax on
 
+"Show partial command in status line
+set showcmd
+
 "Use universal Clipboard
 set clipboard=unnamed
 
+"Show cursor position
+set ruler
+
+"Incremental search
+set incsearch
+
 "Set encoding
 set encoding=utf-8
+
+"Vim sets the window title
+set title
+
+"Match brackets
+set mps=(:),{:},[:]
+set showmatch
+set mat=2
 
 "Theme
 colorscheme lucario
