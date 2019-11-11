@@ -20,6 +20,18 @@ set ruler
 "Incremental search
 set incsearch
 
+"Highlight all search results
+set hlsearch
+
+"Ignore case in search
+set ignorecase
+
+"Ignore case turned off if search pattern includes Uppercase
+set smartcase
+
+"Enable autocompletion
+set wildmode=longest,list,full
+
 "Set encoding
 set encoding=utf-8
 
@@ -53,13 +65,12 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'sirver/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'dense-analysis/ale'
+Plug 'mboughaba/i3config.vim'
 
 call plug#end()
-
 
 "Nerdtree toggle Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
@@ -73,14 +84,16 @@ let g:rainbow_active = 1
 
 "Vimtex settings
 let g:tex_flavor='latex'
+let g:vimtex_view_general_viewer='zathura'
 let g:vimtex_view_method='zathura'
-let g:vimted_quickfix_mode=0
-set conceallevel=1
+let g:vimtex_quickfix_open_on_warning=0
+let g:vimtex_quickfix_mode=2
+let g:vimtex_compiler_method='latexmk'
+set conceallevel=2
 let g:tex_conceal='abdmg'
 
 "Snippets settings
-Plug 'sirver/ultisnips'
-let g:UtilSnipsDirectory='~/.vim/utilsnippets'
+let g:UltiSnipsDirectory='~/.vim/ultisnippets'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
@@ -100,6 +113,12 @@ au BufNewFile,BufRead *.py
 
 "Python highlight
 let python_highlight_all=1
+
+"i3 Config highlight
+aug i3config_ft_detection
+	au!
+	au BufNewfile,BufRead ~/.config/i3/config set filetype=i3config
+aug end
 
 "Ale linting
 let g:ale_sign_error='!-!'
