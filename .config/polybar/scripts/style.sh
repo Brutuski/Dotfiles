@@ -1,8 +1,5 @@
 #!/bin/bash
 
-## Author : Aditya Shakya
-## Github : adi1090x
-
 PDIR="$HOME/.config/polybar"
 LAUNCH="polybar-msg cmd restart"
  
