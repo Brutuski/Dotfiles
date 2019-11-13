@@ -93,7 +93,8 @@ set conceallevel=2
 let g:tex_conceal='abdmg'
 
 "Snippets settings
-let g:UltiSnipsDirectory='~/.vim/ultisnippets'
+let g:UltiSnipsSnippetDir='~/.vim/ultisnippets'
+let g:UltiSnipsSnippetDirectories=["ultisnippets"]
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
