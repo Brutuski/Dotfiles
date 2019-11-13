@@ -1,20 +1,20 @@
-# If you come from bash you might have to change your $PATH.
+#  /$$$$$$$$  /$$$$$$  /$$   /$$
+# |_____ $$  /$$__  $$| $$  | $$
+#      /$$/ | $$  \__/| $$  | $$
+#     /$$/  |  $$$$$$ | $$$$$$$$
+#    /$$/    \____  $$| $$__  $$
+#   /$$/     /$$  \ $$| $$  | $$
+#  /$$$$$$$$|  $$$$$$/| $$  | $$
+# |________/ \______/ |__/  |__/
+
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/adi/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
+# Theme, set to 'random' to load a different theme at every startup
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -63,11 +63,17 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load?
+#  _____  _             _           
+# |  __ \| |           (_)          
+# | |__) | |_   _  __ _ _ _ __  ___ 
+# |  ___/| | | | |/ _` | | '_ \/ __|
+# | |    | | |_| | (_| | | | | \__ \
+# |_|    |_|\__,_|\__, |_|_| |_|___/
+#                  __/ |            
+#                 |___/             
+
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
 	zsh-syntax-highlighting
@@ -97,16 +103,26 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
- alias zshconfig="vim ~/.zshrc"
- alias i3config="vim ~/.config/i3.config"
-# alias eduroam="wpa_supplicant -BW -c /etc/wpa_supplicant/wpa_supplicant.conf -iwlp8s0"
+#           _ _           
+#     /\   | (_)          
+#    /  \  | |_  __ _ ___ 
+#   / /\ \ | | |/ _` / __|
+#  / ____ \| | | (_| \__ \
+# /_/    \_\_|_|\__,_|___/
 
+alias zshconfig="vim ~/.zshrc"
+alias i3config="vim ~/.config/i3.config"
+
+alias fast='./fast'
+alias wclock='./wclock.sh'
+
+alias ':q'='exit'
+
+# lsd aliases
+alias ls='lsd'
+alias 'ls -a'='lsd -a'
+alias 'ls -l'='lsd -l'
+alias 'ls -al'='lsd -al'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
