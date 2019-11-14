@@ -112,6 +112,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="vim ~/.zshrc"
 alias i3config="vim ~/.config/i3.config"
+alias vimrc="vim ~/.vimrc"
 
 alias fast='./fast'
 alias wclock='./wclock.sh'

@@ -4,6 +4,9 @@ syntax enable
 set linebreak
 set wrap
 
+"File detection
+filetype on
+
 "Syntax highlighting
 filetype plugin indent on
 syntax on
@@ -93,11 +96,13 @@ set conceallevel=2
 let g:tex_conceal='abdmg'
 
 "Snippets settings
+set runtimepath+=~/.vim/ultisnippets
 let g:UltiSnipsSnippetDir='~/.vim/ultisnippets'
 let g:UltiSnipsSnippetDirectories=["ultisnippets"]
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsEditSplit='vertical'
+let g:UltiSnipsExpandTrigger = '<C-l>'
+let g:UltiSnipsJumpForwardTrigger = '<C-l>'
+let g:UltiSnipsJumpBackwardTrigger = '<c-k>'
 
 "Python Code Folding enable
 let g:SimpylFold_docstring_preview = 1
@@ -122,7 +127,7 @@ aug i3config_ft_detection
 aug end
 
 "Ale linting
-let g:ale_sign_error='!-!'
+let g:ale_sign_error='!!!'
 let g:ale_sign_warning='--'
 "E & W colors
 highlight clear ALEErrorSign
