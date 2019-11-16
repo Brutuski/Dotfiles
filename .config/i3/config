@@ -20,6 +20,9 @@
 # SET MOD KEY!!!
 set $mod Mod1
 
+# Set Windows key
+set $sup Mod4
+
 # MOUSE related settings
 
 # Enable tap to click
@@ -140,7 +143,7 @@ exec_always ~/fehbg.sh
 
 # LANGUAGE INPUT
 exec_always setxkbmap -layout us,de
-exec --no-startup-id setxkbmap -option 'grp:alt_q_toggle'
+exec_always setxkbmap -option grp:alt_space_toggle
 #setxkbmap -model pc105 -layout us,de -option grp:alt_`_toggle
 #bindsym $mod+ exec --no-startup-id setxkbmap -layout us,de
 
