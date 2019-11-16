@@ -111,7 +111,7 @@ source $ZSH/oh-my-zsh.sh
 # /_/    \_\_|_|\__,_|___/
 
 alias zshconfig="vim ~/.zshrc"
-alias i3config="vim ~/.config/i3.config"
+alias i3config="vim ~/.config/i3/config"
 alias vimrc="vim ~/.vimrc"
 
 alias fast='./fast'
