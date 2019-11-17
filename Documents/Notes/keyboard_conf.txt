@@ -1,0 +1,7 @@
+Section "InputClass"
+  2         Identifier "system-keyboard"
+  3         MatchIsKeyboard "on"
+  4         Option "XkbLayout" "us,de"
+  5         Option "XkbModel" "pc105"
+  6         Option "XkbOptions" "grp:win_space_toggle"
+  7 EndSection
