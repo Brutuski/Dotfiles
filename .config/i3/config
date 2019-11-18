@@ -142,10 +142,8 @@ exec --no-startup-id compton --corner-radius 15
 exec_always ~/fehbg.sh
 
 # LANGUAGE INPUT
+# Language toggle and other settings in /etc/X11/xorg.conf.d
 exec_always setxkbmap -layout us,de
-exec_always setxkbmap -option grp:alt_space_toggle
-#setxkbmap -model pc105 -layout us,de -option grp:alt_`_toggle
-#bindsym $mod+ exec --no-startup-id setxkbmap -layout us,de
 
 # __      ___                 _ 
 # \ \    / (_)               | |

@@ -75,6 +75,9 @@ Plug 'mboughaba/i3config.vim'
 
 call plug#end()
 
+"vim-airline Statusbar
+"set t_Co = 256
+
 "Nerdtree toggle Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
