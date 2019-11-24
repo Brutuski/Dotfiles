@@ -118,6 +118,7 @@ alias fast='./fast'
 alias wclock='./wclock.sh'
 
 alias ':q'='exit'
+alias ':l'='clear'
 
 # lsd aliases
 alias ls='lsd'
