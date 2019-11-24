@@ -146,6 +146,9 @@ exec_always ~/fehbg.sh
 # Language toggle and other settings in /etc/X11/xorg.conf.d
 exec_always setxkbmap -layout us,de
 
+# Start Dunst
+exec_always --no-startup-id dunst
+
 # __      ___                 _ 
 # \ \    / (_)               | |
 #  \ \  / / _ ___ _   _  __ _| |
@@ -252,6 +255,7 @@ for_window [class="Gnome-calculator"] floating enable
 for_window [class="gedit"] floating enable
 for_window [class="Transmission"] floating enable
 for_window [class="Pavucontrol"] floating enable
+for_window [class="wicd-client.py"] floating enable
 
 # Start certain windows in specific workspaces
 #for_window [class="Google-chrome"] move window to workspace $ws2
