@@ -37,6 +37,8 @@ floating_modifier $mod
 #LAUNCH SHORTCUTS
 # start Tilix
 bindsym $mod+Return exec tilix
+bindsym $mod+t exec texmaker
+bindsym $mod+z exec zathura
 
 # Start rofi
 bindsym $mod+d exec --no-startup-id rofi -show drun
@@ -137,7 +139,7 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Compton: Shadows + corners
-exec --no-startup-id compton --corner-radius 15
+exec_always --no-startup-id compton --config ~/.config/i3/compton.conf
 
 # Set Wallpaper using feh on startup
 exec_always ~/fehbg.sh
