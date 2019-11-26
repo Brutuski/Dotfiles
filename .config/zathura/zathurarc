@@ -15,21 +15,24 @@ set adjust-open "best-fit"
 #Window title
 set window-title-basename true
 
+#Font
+set font "Hack Nerd Mono 10"
+
 #Key bindings
 map [normal]		<F11> toggle_fullscreen
 map [fullscreen]	<F11> toggle_fullscreen
 
 
 #Colors
-set recolor-darkcolor  "#FFFFFF"
-set recolor-lightcolor "#333333"
-set statusbar-fg "#000000"
-set statusbar-bg "#C2BFA5"
-set inputbar-fg "#FFFFFF"
-set inputbar-bg "#333333"
-set completion-highlight-fg "#F0E68C"
-set completion-highlight-bg "#6B8E23"
+set recolor-darkcolor  "#F8F8F2"
+set recolor-lightcolor "#19242F"
+set statusbar-fg "#F8F8F2"
+set statusbar-bg "#2B3E50"
+set inputbar-fg "#F8F8F2"
+set inputbar-bg "#19242F"
+set completion-highlight-fg "#E24C49"
+set completion-highlight-bg "#E6DB74"
 set highlight-color "#CD853F"
-set highlight-active-color "#F0E68C"
-set notification-fg "#FFFFFF"
-set notification-bg "#333333"
+set highlight-active-color "#E57C46"
+set notification-fg "#F8F8F2"
+set notification-bg "#19242F"
