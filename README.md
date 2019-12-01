@@ -4,3 +4,5 @@
 3. Rofi
 4. Nano
 5. Vim
+6. Compton
+7. Ranger
