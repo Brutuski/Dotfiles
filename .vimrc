@@ -42,7 +42,7 @@ set encoding=utf-8
 set title
 
 "Match brackets
-set mps=(:),{:},[:]
+set mps=(:),{:},[:],<:>
 set showmatch
 set mat=2
 
@@ -52,6 +52,10 @@ colorscheme lucario
 "Line number
 set number
 set termguicolors
+
+"Folding
+"Files not folded on opening
+set nofoldenable
 
 "Plugins using vim-plug
 call plug#begin('~/.vim/plugged')
@@ -75,8 +79,16 @@ Plug 'mboughaba/i3config.vim'
 
 call plug#end()
 
-"vim-airline Statusbar
-"set t_Co = 256
+"Syntax
+autocmd BufNewFile,BufRead *.config set syntax=sh
+autocmd BufNewFile,BufRead *.conf set syntax=sh
+autocmd BufNewFile,BufRead *.rc set syntax=sh
+autocmd BufNewFile,BufRead pkgfile set syntax=sh
+
+autocmd BufNewFile,BufRead *.c set syntax=c
+autocmd BufNewFile,BufRead *.hs set syntax=haskell
+autocmd BufNewFile,BufRead *.txt set syntax=off
+autocmd BufNewFile,BufRead *.md set syntax=md
 
 "Nerdtree toggle Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
