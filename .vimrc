@@ -72,7 +72,9 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'sirver/ultisnips'
+Plug 'lervag/vimtex'
 Plug 'tmhedberg/SimpylFold'
+Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'dense-analysis/ale'
 Plug 'mboughaba/i3config.vim'
@@ -92,6 +94,8 @@ autocmd BufNewFile,BufRead *.md set syntax=md
 
 "Nerdtree toggle Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''
 
 "Open Nerdtree if no files were specified 
 autocmd StdinReadPre * let s:std_in=1
@@ -105,9 +109,9 @@ let g:tex_flavor='latex'
 let g:vimtex_view_general_viewer='zathura'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_open_on_warning=0
-let g:vimtex_quickfix_mode=2
+let g:vimtex_quickfix_mode=0
 let g:vimtex_compiler_method='latexmk'
-set conceallevel=2
+set conceallevel=1
 let g:tex_conceal='abdmg'
 
 "Snippets settings
