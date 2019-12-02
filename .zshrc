@@ -80,7 +80,6 @@ plugins=(
 	zsh-autosuggestions
 	colored-man-pages
 	colorize
-	battery
 	command-not-found
 	common-aliases)
 
