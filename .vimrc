@@ -70,7 +70,6 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-Plug 'vim-scripts/indentpython.vim'
 Plug 'sirver/ultisnips'
 Plug 'lervag/vimtex'
 Plug 'tmhedberg/SimpylFold'
