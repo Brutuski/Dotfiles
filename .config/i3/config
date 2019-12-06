@@ -171,7 +171,6 @@ gaps inner $inner
 gaps outer $outer
 
 for_window [class=".*"] border pixel 2
-#border_radius 10
 
 # __          __        _                             
 # \ \        / /       | |                            
