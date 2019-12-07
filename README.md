@@ -21,4 +21,4 @@ Desktop Dotfiles Repo
 ## Screenshots
 Desktop ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Desktop.png)
 Vim ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Vimi3config.png)
-Tiling ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/ranger%2Bgotop%2Bvimrc.png)
+Tilix tabs ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/ranger%2Bgotop%2Bvimrc.png)
