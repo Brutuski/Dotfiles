@@ -103,6 +103,12 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "Rainbow Parentheses
 let g:rainbow_active = 1
 
+"Markdown
+let g:vim_markdown_folding_style_pythonic = 1
+let g:vim_markdown_conceal = 2
+let g:vim_markdown_new_list_item_indent = 2
+let g:vim_markdown_no_extensions_in_markdown = 1
+
 "Vimtex settings
 let g:tex_flavor='latex'
 let g:vimtex_view_general_viewer='zathura'
@@ -161,4 +167,3 @@ let g:ale_lint_on_text_changed='never'
 let g:ale_lint_on_insert_leave='never'
 let g:ale_lint_on_enter=0
 let g:ale_lint_on_save=1
-
