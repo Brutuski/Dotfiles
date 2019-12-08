@@ -17,7 +17,7 @@ Desktop Dotfiles Repo
 [**Ranger**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/ranger) | Terminal based file manager with vim keybindings |  [Github](https://github.com/davatorium/rofi)
 [**Rofi**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/rofi)  | Appliation launcher and much more. Fully configurable |  [Github](https://github.com/ranger/ranger)
 [**Dunst**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/dunst) | Notifications daemon. Extremely configurable and lightweight |  [Github](https://github.com/dunst-project/dunst)
-[**Vim**] | Preferred Editor |
+**Vim** | Preferred Editor |
 [**Zathura**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/zathura) | Lightweight PDF reader with a focus on reading. Vim keybindings support  |  [Github](https://github.com/pwmt/zathura)
 
 
@@ -29,17 +29,21 @@ Desktop Dotfiles Repo
 
 
 ### Basic Keybindings
+| Key Combination | Function |
 | ---- | ---- |
 | _alt_ | mod in i3 |
 | _win_ | sup in i3 |
+| _win+space_ | Toggle Languages |
 
+| Key Combination | Function |
 | ---- | ---- |
-| _mod+return_ | tilix|
+| _mod+return_ | tilix |
 | _mod+t_ | TexStudio |
 | _mod+z_ | Zathura PDF |
 | _mod+d_ | Rofi drun |
 | _sup+w_ | Rofi window changer |
 
+| Key Combination | Function |
 | ---- | ---- |
 | _mod+control+k_ | Backlight +10 |
 | _mod+control+j_ | Backlight -10 |
