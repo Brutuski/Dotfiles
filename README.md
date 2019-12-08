@@ -20,11 +20,34 @@ Desktop Dotfiles Repo
 [**Vim**] | Preferred Editor |
 [**Zathura**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/zathura) | Lightweight PDF reader with a focus on reading. Vim keybindings support  |  [Github](https://github.com/pwmt/zathura)
 
+
 ### Fonts
 #### System Font
 + [**Hack Nerd Mono**](https://github.com/ryanoasis/nerd-fonts)
 #### Icon Font (for Polybar)
 + [**Wuncon Siji**](https://github.com/stark/siji)
+
+
+### Basic Keybindings
+| ---- | ---- |
+| _alt_ | mod in i3 |
+| _win_ | sup in i3 |
+
+| ---- | ---- |
+| _mod+return_ | tilix|
+| _mod+t_ | TexStudio |
+| _mod+z_ | Zathura PDF |
+| _mod+d_ | Rofi drun |
+| _sup+w_ | Rofi window changer |
+
+| ---- | ---- |
+| _mod+control+k_ | Backlight +10 |
+| _mod+control+j_ | Backlight -10 |
+| _mod+F1_ | Lock Screen |
+| _mod+r_ | Reload i3 config |
+| _mod+<num>_ | Move to corresponding Workspace |
+| _Print_ | Screenshot |
+
 
 ## Basic Guidelines for setup
 + Install i3-Gaps, from [AUR](https://www.archlinux.org/packages/community/x86_64/i3-gaps/) for example. Go through basic setup as prompted.
