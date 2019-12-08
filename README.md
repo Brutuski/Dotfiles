@@ -33,7 +33,7 @@ Desktop Dotfiles Repo
 | ---- | ---- |
 | _alt_ | mod in i3 |
 | _win_ | sup in i3 |
-| _win+space_ | Toggle Languages |
+| _win+space_ | Toggle between US and DE lamguage input |
 
 | Key Combination | Function |
 | ---- | ---- |
@@ -55,13 +55,13 @@ Desktop Dotfiles Repo
 
 ## Basic Guidelines for setup
 + Install i3-Gaps, from [AUR](https://www.archlinux.org/packages/community/x86_64/i3-gaps/) for example. Go through basic setup as prompted.
-+ i3 config goes to _~/.config/i3/config_. Replace the config with the one in the repo here. For further options refer to the [official docs](https://i3wm.org/docs/userguide.html) .
++ i3 config goes to _~/.config/i3/config_. Replace the config with the one in the repo here. For further options refer to the [official docs](https://i3wm.org/docs/userguide.html).
 + Install Polybar, from [AUR](https://aur.archlinux.org/packages/polybar/). All configs and scripts for Polybar are places in _~/.config/polybar_. Polybar is launched using launch.sh script executed by i3 config on startup.
-+ [Feh](https://wiki.archlinux.org/index.php/Feh) is used to set the wallpaper on startup. Executed by i3 on config on startup as well. Installed via [AUR](https://www.archlinux.org/packages/extra/x86_64/feh/) .
++ [Feh](https://wiki.archlinux.org/index.php/Feh) is used to set the wallpaper on startup. Executed by i3 on config on startup as well. Installed via [AUR](https://www.archlinux.org/packages/extra/x86_64/feh/).
 
 
 ## Screenshots
-+ Taken using [Scrot](https://github.com/resurrecting-open-source-projects/scrot). _Print_ Key is mapped in the i3 config to execute scrot command. Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/scrot/) .
++ Taken using [Scrot](https://github.com/resurrecting-open-source-projects/scrot). _Print_ Key is mapped in the i3 config to execute scrot command. Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/scrot/).
 
 Desktop ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Desktop.png)
 Neofecth ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Neofetch.png)
