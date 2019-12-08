@@ -9,13 +9,14 @@ Desktop Dotfiles Repo
 
 
 ## Dotfiles for:
-+ [**i3-Gaps**](https://github.com/Brutuski/Dotfiles/blob/master/.config/i3/config)
-+ [**Polybar**](https://github.com/Brutuski/Dotfiles/tree/master/.config/polybar)
-+ [**Rofi**](https://github.com/Brutuski/Dotfiles/tree/master/.config/rofi)
-+ [**Ranger**](https://github.com/Brutuski/Dotfiles/tree/master/.config/ranger)
-+ [**Dunst**](https://github.com/Brutuski/Dotfiles/tree/master/.config/dunst)
-+ [**Compton**](https://github.com/Brutuski/Dotfiles/tree/master/.config/compton)
-+ [**Zathura**](https://github.com/Brutuski/Dotfiles/tree/master/.config/zathura)
+| Dependency | Description | Source
+| ---- | ---- | ---- |
+| [**i3-Gaps**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/i3) | Windows Manager, fork of i3 | [Github](https://github.com/Airblader/i3)
+[**Polybar**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/polybar)| For Statusbar config  | [Github](https://github.com/polybar/polybar)
+[**Ranger**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/ranger) | Terminal based file manager with vim keybindings |  [Github](https://github.com/davatorium/rofi)
+[**Rofi**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/rofi)  | Appliation launcher and much more. Fully configurable |  [Github](https://github.com/ranger/ranger)
+[**Dunst**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/dunst) | Notifications daemon. Extremely configurable and lightweight |  [Github](https://github.com/dunst-project/dunst)
+[**Zathura**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/zathura) | Lightweight PDF reader with a focus on reading. Vim keybindings support  |  [Github](https://github.com/pwmt/zathura)
 
 
 ## Screenshots
