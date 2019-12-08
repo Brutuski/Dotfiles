@@ -61,7 +61,7 @@ Desktop Dotfiles Repo
 
 
 ## Screenshots
-+ Taken using [Scrot](https://github.com/resurrecting-open-source-projects/scrot). _Print_ Key is mapped in the i3 config to execute scrot command. Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/scrot/).
++ Taken using [Scrot](https://github.com/resurrecting-open-source-projects/scrot). _Print_ Key is mapped in the i3 config to execute scrot command. Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/scrot/). [Wallpaper Source](https://www.artstation.com/artwork/mQLe1).
 
 Desktop ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Desktop.png)
 Neofecth ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Neofetch.png)
