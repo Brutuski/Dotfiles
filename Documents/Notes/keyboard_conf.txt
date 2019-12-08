@@ -1,3 +1,7 @@
+# /etc/X11/xorg.conf.d/00-keyboard.conf
+# Can only be edited as sudo
+# Loads up automatically on startup, reboot for changes to take effect
+
 Section "InputClass"
   2         Identifier "system-keyboard"
   3         MatchIsKeyboard "on"
@@ -5,3 +9,5 @@ Section "InputClass"
   5         Option "XkbModel" "pc105"
   6         Option "XkbOptions" "grp:win_space_toggle"
   7 EndSection
+
+# More details: https://wiki.archlinux.org/index.php/Xorg/Keyboard_configuration#Using_X_configuration_files

@@ -1,7 +1,10 @@
-eduroam.conf with Network settings
-#run both commands with sudo
-# ONLY wpa_supplicant
- wpa_supplicant -B -ceduroam.conf -i wlp8s0 -D nl80211
+# File with configuration
+~/eduroam.conf
 
-#Run to get IP address
+#Run both commands with sudo
+
+#wpa_supplicant
+wpa_supplicant -B -ceduroam.conf -i wlp8s0 -D nl80211
+
+#To get IP address
 dhcpcd wlp8s0
