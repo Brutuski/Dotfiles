@@ -17,7 +17,7 @@ Desktop Dotfiles Repo
 [**Ranger**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/ranger) | Terminal based file manager with vim keybindings |  [Github](https://github.com/davatorium/rofi)
 [**Rofi**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/rofi)  | Appliation launcher and much more. Fully configurable |  [Github](https://github.com/ranger/ranger)
 [**Dunst**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/dunst) | Notifications daemon. Extremely configurable and lightweight |  [Github](https://github.com/dunst-project/dunst)
-**Vim** | Preferred Editor |
+[**Vim**](https://github.com/Brutuski/Dotfiles/blob/master/.vimrc) | Preferred Editor. Endless plugins and supports every kind of programing & markdown language. Available on every OS. | [Github](https://github.com/vim/vim)
 [**Zathura**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/zathura) | Lightweight PDF reader with a focus on reading. Vim keybindings support  |  [Github](https://github.com/pwmt/zathura)
 
 
@@ -55,8 +55,8 @@ Desktop Dotfiles Repo
 
 ## Basic Guidelines for setup
 + Install i3-Gaps, from [AUR](https://www.archlinux.org/packages/community/x86_64/i3-gaps/) for example. Go through basic setup as prompted.
-+ i3 config goes to _~/.config/i3/config_. Replace the config with the one in the repo here. For further options refer to the [official docs](https://i3wm.org/docs/userguide.html).
-+ Install Polybar, from [AUR](https://aur.archlinux.org/packages/polybar/). All configs and scripts for Polybar are places in _~/.config/polybar/_. Polybar is launched using launch.sh script executed by i3 config on startup.
++ i3 config goes to `~/.config/i3/config`. Replace the config with the one in the repo here. For further options refer to the [official docs](https://i3wm.org/docs/userguide.html).
++ Install Polybar, from [AUR](https://aur.archlinux.org/packages/polybar/). All configs and scripts for Polybar are places in `~/.config/polybar/`. Polybar is launched using launch.sh script executed by i3 config on startup.
 + [Feh](https://wiki.archlinux.org/index.php/Feh) is used to set the wallpaper on startup. Executed by i3 on config on startup as well. Installed via [AUR](https://www.archlinux.org/packages/extra/x86_64/feh/).
 + Screen lock setup using [i3lock](https://i3wm.org/i3lock/). Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/i3lock/).
 
