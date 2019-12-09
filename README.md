@@ -1,4 +1,4 @@
-# Desktop Dotfiles
+# Dotfiles
 Desktop Dotfiles Repo
 + **OS**:              Arch Linux x86_64
 + **Shell**:           ZSH
