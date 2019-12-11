@@ -31,26 +31,26 @@ Desktop Dotfiles Repo
 ### Basic Keybindings
 | Key Combination | Function |
 | ---- | ---- |
-| _alt_ | mod in i3 |
-| _win_ | sup in i3 |
-| _win+space_ | Toggle between US and DE lamguage input |
+| `alt` | mod in i3 |
+| `win` | sup in i3 |
+| `win+space` | Toggle between US and DE lamguage input |
 
 | Key Combination | Function |
 | ---- | ---- |
-| _mod+return_ | tilix |
-| _mod+t_ | TexStudio |
-| _mod+z_ | Zathura PDF |
-| _mod+d_ | Rofi drun |
-| _sup+w_ | Rofi window changer |
+| `mod+return` | tilix |
+| `mod+t` | TexStudio |
+| `mod+z` | Zathura PDF |
+| `mod+d` | Rofi drun |
+| `sup+w` | Rofi window changer |
 
 | Key Combination | Function |
 | ---- | ---- |
-| _mod+control+k_ | Backlight +10 |
-| _mod+control+j_ | Backlight -10 |
-| _mod+F1_ | Lock Screen |
-| _mod+r_ | Reload i3 config |
-| _mod+num_ | Move to corresponding Workspace |
-| _Print_ | Screenshot |
+| `mod+control+k` | Backlight +10 |
+| `mod+control+j` | Backlight -10 |
+| `mod+F1` | Lock Screen |
+| `mod+r` | Reload i3 config |
+| `mod+num` | Move to corresponding Workspace |
+| `Print` | Screenshot |
 
 
 ## Basic Guidelines for setup
