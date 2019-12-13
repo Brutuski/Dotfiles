@@ -121,12 +121,12 @@ let g:tex_conceal='abdmg'
 
 "Snippets settings
 set runtimepath+=~/.vim/ultisnippets
-let g:UltiSnipsSnippetDir='~/.vim/ultisnippets'
-let g:UltiSnipsSnippetDirectories=["ultisnippets"]
+let g:UltiSnipsSnippetDir='~/.vim/UltiSnips'
+"let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:UltiSnipsEditSplit='vertical'
-let g:UltiSnipsExpandTrigger = '<C-l>'
-let g:UltiSnipsJumpForwardTrigger = '<C-l>'
-let g:UltiSnipsJumpBackwardTrigger = '<c-k>'
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 "Python Code Folding enable
 let g:SimpylFold_docstring_preview = 1
