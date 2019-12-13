@@ -1,9 +1,9 @@
 #!/bin/zsh
 
-echo -n '\e[93mDelhi:        '
-Delhi=$(date -d '+ 270 minutes' '+ %H:%M')
-echo "$Delhi"
+#Script to display current time in India and New York in Dunst
 
-echo -n '\e[93mNew York:     '
+Delhi=$(date -d '+ 270 minutes' '+ %H:%M')
+dunstify -t 10000 "Time in Delhi" "$Delhi"
+
 NewYork=$(date -d '- 300 minutes' '+ %H:%M')
-echo "$NewYork"
+dunstify -t 10000 "Time in New York" "$NewYork"
