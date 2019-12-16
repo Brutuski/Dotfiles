@@ -42,7 +42,7 @@ bindsym $mod+z exec zathura
 bindsym $mod+f exec ranger
 
 # Start rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id rofi -show
 bindsym $sup+w exec --no-startup-id rofi -show window
 
 # Take screenshot using scrot
