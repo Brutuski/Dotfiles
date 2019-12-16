@@ -115,6 +115,8 @@ alias vimrc="vim ~/.vimrc"
 
 alias fast='./fast'
 alias wclock='./wclock.sh'
+alias ra='ranger'
+alias gt='gotop'
 
 alias ':q'='exit'
 alias ':l'='clear'
