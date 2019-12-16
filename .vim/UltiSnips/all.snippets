@@ -1,0 +1,133 @@
+#Start Document
+snippet beg "Basic template"
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{framed}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\F}{\mathbb{F}}
+
+\begin{document}
+\author{Adi}
+\title{$1}
+\maketitle
+\textbf{$2}
+\end{document}
+
+endsnippet
+
+#Basic formatting
+snippet tb "Text bold"
+\textbf{$0}
+endsnippet
+
+snippet ti "Text Italics"
+\textit{$0}
+endsnippet
+
+snippet ul "Underline"
+\underline{$0}
+endsnippet
+
+snippet fbox "Fbox"
+\fbox{$0}
+endsnippet
+
+snippet ali "Align"
+\begin{align*}
+	${1:${VISUAL}}
+.\end{align*}
+endsnippet
+
+snippet np "New page"
+\newpage
+$0
+endsnippet
+
+#Math Functions
+snippet inmath "Inline math"
+$$$0$$
+endsnippet
+
+snippet frac "Fractions"
+\frac{$1}{$2}$0
+endsnippet
+
+snippet sqr "Square root"
+\sqrt{$0}
+endsnippet
+
+snippet sqrt "nth root"
+\sqrt[$1]{$2}$0
+endsnippet
+
+snippet cdot "Multiply dot"
+\cdot
+endsnippet
+
+snippet pmat "Matrix"
+\begin{pmatrix}
+$1 & $2 \\
+$3 & $4
+\end{pmatrix}$0
+endsnippet
+
+snippet bmat "Matrix"
+\begin{bmatrix}
+$1 & $2 \\
+$3 & $4
+\end{bmatrix}$0
+endsnippet
+
+snippet vmat "Matrix"
+\begin{vmatrix}
+$1 & $2\\
+$3 & $4
+\end{vmatrix}$0
+endsnippet
+
+snippet equa "Equation"
+\begin{equation}
+\being{split}
+$0
+\end{equation}
+\end{split}
+endsnippet
+
+snippet sum "Sum"
+\sum_{$0}^{$0}
+endsnippet
+
+snippet lim "Limit"
+\lim_{$0 \rightarrow $0}
+endsnippet
+
+snippet vec "Vector"
+\overrightarrow{$0}
+endsnippet
+
+#Arrows
+snippet -> "rightArrow"
+\rightarrow
+endsnippet
+
+snippet <- "leftarrow"
+\leftarrow
+endsnippet
+
+snippet => "Rightarrow"
+\Rightarrow
+endsnippet
+
+snippet <= "Leftarrow"
+\Leftarrow
+endsnippet
+
+snippet <-> "leftrightarrow"
+\leftrightarrow
+endsnippet
