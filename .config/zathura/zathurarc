@@ -6,8 +6,11 @@ set incremental-search true
 
 #Zoom and Scroll step
 set smooth-scroll true
-set zoom-step 20
-set scroll-step 80
+set zoom-step 10
+set scroll-step 150
+
+set guioptions ""
+set page-padding 10
 
 #Fit width 
 set adjust-open "best-fit"
@@ -21,6 +24,8 @@ set font "Hack Nerd Mono 10"
 #Key bindings
 map [normal]		<F11> toggle_fullscreen
 map [fullscreen]	<F11> toggle_fullscreen
+map n			navigate next
+map p			navigate previous
 
 
 #Colors
