@@ -66,5 +66,6 @@ Desktop Dotfiles Repo
 
 Desktop ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Desktop.png)
 Neofecth ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Neofetch.png)
+Rofi ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Rofi.png)
 Vim ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Vimi3config.png)
 Tilix tabs ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/ranger%2Bgotop%2Bvimrc.png)
