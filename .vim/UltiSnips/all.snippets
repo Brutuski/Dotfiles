@@ -1,3 +1,17 @@
+snippet sni "new snippet"
+snippet $1 "$2"
+$3
+endsnippet$0
+endsnippet
+
+
+#   _          _            
+#  | |    __ _| |_ _____  __
+#  | |   / _` | __/ _ \ \/ /
+#  | |__| (_| | ||  __/>  < 
+#  |_____\__,_|\__\___/_/\_\
+                          
+
 #Start Document
 snippet beg "Basic template"
 \documentclass{article}
@@ -131,3 +145,57 @@ endsnippet
 snippet <-> "leftrightarrow"
 \leftrightarrow
 endsnippet
+
+
+#       _   ___     ___    
+#      | | / \ \   / / \   
+#   _  | |/ _ \ \ / / _ \  
+#  | |_| / ___ \ V / ___ \ 
+#   \___/_/   \_\_/_/   \_\
+                         
+
+snippet main "main method"
+public static void main(String[] args){
+	$0
+	return 0;
+}
+endsnippet
+
+snippet print "print in line"
+System.out.print($0);
+endsnippet
+
+snippet println "print in new line"
+System.out.println($0);
+endsnippet
+
+
+#   ____        _   _                 
+#  |  _ \ _   _| |_| |__   ___  _ __  
+#  | |_) | | | | __| '_ \ / _ \| '_ \ 
+#  |  __/| |_| | |_| | | | (_) | | | |
+#  |_|    \__, |\__|_| |_|\___/|_| |_|
+#        |___/                       
+
+
+snippet name "if name = main"
+if __name__ == '__main__':
+	main()
+endsnippet
+
+snippet binpy "env python"
+#!/usr/bin/env python
+endsnippet
+
+
+#   ____            _     
+#  | __ )  __ _ ___| |__  
+#  |  _ \ / _` / __| '_ \ 
+#  | |_) | (_| \__ \ | | |
+#  |____/ \__,_|___/_| |_|
+
+
+snippet bin "bin/zsh"
+#!/bin/zsh
+endsnippet
+
