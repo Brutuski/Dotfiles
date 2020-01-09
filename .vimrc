@@ -77,6 +77,7 @@ Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'dense-analysis/ale'
 Plug 'mboughaba/i3config.vim'
+Plug 'wlemuel/vim-tldr'
 
 call plug#end()
 
@@ -150,8 +151,13 @@ aug i3config_ft_detection
 	au BufNewfile,BufRead ~/.config/i3/config set filetype=i3config
 aug end
 
+"tldr options
+let g:tldr_directory_path = '~/.cache/tldr'
+let g:tldr_split_type = 'horizontal'
+
+
 "Ale linting
-let g:ale_sign_error='!!!'
+let g:ale_sign_error='!'
 let g:ale_sign_warning='--'
 "E & W colors
 highlight clear ALEErrorSign
