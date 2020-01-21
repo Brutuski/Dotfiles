@@ -133,14 +133,14 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:SimpylFold_docstring_preview = 1
 
 "PEP-8 Python Indentation
-au BufNewFile,BufRead *.py
+"au BufNewFile,BufRead *.py
 "    \ set tabstop=4
 "    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+"    \ set shiftwidth=4
+"    \ set textwidth=79
+"    \ set expandtab
+"    \ set autoindent
+"    \ set fileformat=unix
 
 "Python highlight
 let python_highlight_all=1
