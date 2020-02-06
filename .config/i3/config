@@ -26,7 +26,7 @@ set $sup Mod4
 # MOUSE related settings
 
 # Enable tap to click
-exec_always xinput set-prop 13 314 1
+exec_always xinput set-prop 14 332 1
 
 # Right click toggles floating
 #bindsym --whole-window $mod+button2 floating toggle

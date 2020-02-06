@@ -78,6 +78,7 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'dense-analysis/ale'
 Plug 'mboughaba/i3config.vim'
 Plug 'wlemuel/vim-tldr'
+Plug 'nathanaelkane/vim-indent-guides'
 
 call plug#end()
 
@@ -100,6 +101,11 @@ let g:NERDTreeDirArrowCollapsible = ''
 "Open Nerdtree if no files were specified 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"IndentGuide
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size = 1
+set ts=2 sw=2 et
 
 "Rainbow Parentheses
 let g:rainbow_active = 1
