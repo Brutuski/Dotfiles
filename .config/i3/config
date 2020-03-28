@@ -261,6 +261,7 @@ for_window [class="gedit"] floating enable
 for_window [class="Transmission"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="wicd-client.py"] floating enable
+for_window [class="Matplotlib"] floating enable
 
 # Start certain windows in specific workspaces
 #for_window [class="Google-chrome"] move window to workspace $ws2
