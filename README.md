@@ -5,7 +5,8 @@ Desktop Dotfiles Repo
 + **Terminal**:        [Tilix](https://github.com/gnunn1/tilix) _with_ [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 + **Windows Manager**: [13-Gaps](https://github.com/Airblader/i3)
 + **Theme**:           [Nordic](https://github.com/EliverLara/Nordic)
-+ **Tilix theme**:     [ToyChest](https://github.com/storm119/Tilix-Themes/blob/master/Themes.md)
++ **Colors**:          [Dracula](https://github.com/dracula/dracula-theme)
++ **Tilix theme**:     [Dracula](https://github.com/dracula/tilix)
 + **Icons**            [Paper](https://snwh.org/paper)
 
 
@@ -68,4 +69,4 @@ Desktop ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screensho
 Neofecth ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Neofetch.png)
 Rofi ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Rofi.png)
 Vim ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Vimi3config.png)
-Tilix tabs ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/ranger%2Bgotop%2Bvimrc.png)
+Tilix tabs ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/vim%2Bgotop%2Bvimrc.png)
