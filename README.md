@@ -3,7 +3,7 @@ Desktop Dotfiles Repo
 + **OS**:              Arch Linux x86_64
 + **Shell**:           ZSH
 + **Terminal**:        [Tilix](https://github.com/gnunn1/tilix) _with_ [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
-+ **Windows Manager**: [13-Gaps](https://github.com/Airblader/i3)
++ **Windows Manager**: [13-Gaps-Rounded](https://github.com/resloved/i3)
 + **Theme**:           [Nordic](https://github.com/EliverLara/Nordic)
 + **Colors**:          [Dracula](https://github.com/dracula/dracula-theme)
 + **Tilix theme**:     [Dracula](https://github.com/dracula/tilix)
@@ -13,7 +13,7 @@ Desktop Dotfiles Repo
 ## Dotfiles for:
 | Dependency | Description | Source
 | ---- | ---- | ---- |
-| [**i3-Gaps**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/i3) | Windows Manager, fork of i3 | [Github](https://github.com/Airblader/i3)
+| [**i3-Gaps-Rounded**](https://github.com/resloved/i3) | Windows Manager, fork of i3-Gaps | [Github](https://github.com/Airblader/i3)
 [**Polybar**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/polybar)| For Statusbar config  | [Github](https://github.com/polybar/polybar)
 [**Ranger**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/ranger) | Terminal based file manager with vim keybindings |  [Github](https://github.com/davatorium/rofi)
 [**Rofi**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/rofi)  | Appliation launcher and much more. Fully configurable |  [Github](https://github.com/ranger/ranger)
