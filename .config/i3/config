@@ -55,6 +55,9 @@ bindsym $mod+Control+j exec light -U 10
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# Powermenu with Rofi
+bindsym $mod+Shift+s exec --no-startup-id ~/.config/rofi/powermenu.sh
+
 # Lock screen using i3lock
 bindsym $mod+F1 exec --no-startup-id i3lock -i ~/Documents/Chrome-Downloads/Lockscreen.png -p default -n
 
@@ -166,14 +169,22 @@ exec_always --no-startup-id "~/.config/polybar/scripts/wallblur.sh -i ~/Document
 font pango:Hack Nerd Mono 8
 
 # GAP VARIABLES
-set $inner 8
-set $outer 4
+set $inner 10
+set $outer 0
 
 # SET GAPS
 gaps inner $inner
 gaps outer $outer
 
-for_window [class=".*"] border pixel 2
+# ROUNDED CORNERS
+set $thick 16
+border_radius 10
+
+for_window [class="^.*"] border pixel 1
+
+# Gaps only when there is more than 1 Window in container
+#smart_gaps on
+
 
 # __          __        _                             
 # \ \        / /       | |                            
@@ -195,6 +206,16 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+set $ws11 "11"
+set $ws12 "12"
+set $ws13 "13"
+set $ws14 "14"
+set $ws15 "15"
+set $ws16 "16"
+set $ws17 "17"
+set $ws18 "18"
+set $ws19 "19"
+set $ws20 "20"
 
 # Switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -207,6 +228,16 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+bindsym $mod+MOD4+1 workspace number $ws11
+bindsym $mod+MOD4+2 workspace number $ws12
+bindsym $mod+MOD4+3 workspace number $ws13
+bindsym $mod+MOD4+4 workspace number $ws14
+bindsym $mod+MOD4+5 workspace number $ws15
+bindsym $mod+MOD4+6 workspace number $ws16
+bindsym $mod+MOD4+7 workspace number $ws17
+bindsym $mod+MOD4+8 workspace number $ws18
+bindsym $mod+MOD4+9 workspace number $ws19
+bindsym $mod+MOD4+0 workspace number $ws20
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -219,6 +250,16 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+bindsym $mod+MOD4+Shift+1 move container to workspace number $ws11
+bindsym $mod+MOD4+Shift+2 move container to workspace number $ws12
+bindsym $mod+MOD4+Shift+3 move container to workspace number $ws13
+bindsym $mod+MOD4+Shift+4 move container to workspace number $ws14
+bindsym $mod+MOD4+Shift+5 move container to workspace number $ws15
+bindsym $mod+MOD4+Shift+6 move container to workspace number $ws16
+bindsym $mod+MOD4+Shift+7 move container to workspace number $ws17
+bindsym $mod+MOD4+Shift+8 move container to workspace number $ws18
+bindsym $mod+MOD4+Shift+9 move container to workspace number $ws19
+bindsym $mod+MOD4+Shift+0 move container to workspace number $ws20
 
 # __          ___           _                   
 # \ \        / (_)         | |                  
@@ -263,5 +304,15 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="wicd-client.py"] floating enable
 for_window [class="Matplotlib"] floating enable
 
-# Start certain windows in specific workspaces
-#for_window [class="Google-chrome"] move window to workspace $ws2
+
+#     ___      _                
+#    / __\___ | | ___  _ __ ___ 
+#   / /  / _ \| |/ _ \| '__/ __|
+#  / /__| (_) | | (_) | |  \__ \
+#  \____/\___/|_|\___/|_|  |___/
+
+#colors:                border  backgr. text    indicator
+client.focused          #50FA7B #007030 #ffffff #2b2b2b
+client.focused_inactive #FFB86C #2b2b2b #ffffff #2b2b2b
+client.unfocused        #F1FA8C #2b2b2b #ffffff #2b2b2b
+client.urgent           #FF5555 #900000 #ffffff #2b2b2b
