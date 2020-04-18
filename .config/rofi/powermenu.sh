@@ -5,5 +5,5 @@ MENU="$(rofi -theme ~/.config/rofi/themes/dracula.rasi -sep "|" -dmenu -i -p 'Sy
 case "$MENU" in
   *Logout) i3lock -i ~/Documents/Chrome-Downloads/Lockscreen.png -p default -n ;;
   *Reboot) systemctl reboot ;;
-  *Shutdown) systemctl shutdown now
+  *Shutdown) systemctl poweroff
 esac
