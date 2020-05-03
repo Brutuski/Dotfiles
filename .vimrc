@@ -1,3 +1,11 @@
+"  ____    ____  __  .___  ___. .______       ______ 
+"  \   \  /   / |  | |   \/   | |   _  \     /      |
+"   \   \/   /  |  | |  \  /  | |  |_)  |   |  ,----'
+"    \      /   |  | |  |\/|  | |      /    |  |     
+"     \    /    |  | |  |  |  | |  |\  \--. |  `----.
+"      \__/     |__| |__|  |__| | _| `.___|  \______|
+"                                                     
+
 syntax enable
 
 "Line wrap and break
@@ -47,7 +55,8 @@ set showmatch
 set mat=2
 
 "Theme
-colorscheme lucario
+packadd! dracula
+colorscheme dracula
 
 "Line number
 set number
@@ -70,6 +79,7 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'sirver/ultisnips'
 Plug 'lervag/vimtex'
 Plug 'tmhedberg/SimpylFold'
@@ -79,77 +89,74 @@ Plug 'dense-analysis/ale'
 Plug 'mboughaba/i3config.vim'
 Plug 'wlemuel/vim-tldr'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
 "Syntax
 autocmd BufNewFile,BufRead *.config set syntax=sh
-autocmd BufNewFile,BufRead *.conf set syntax=sh
-autocmd BufNewFile,BufRead *.rc set syntax=sh
-autocmd BufNewFile,BufRead pkgfile set syntax=sh
+autocmd BufNewFile,BufRead *.conf   set syntax=sh
+autocmd BufNewFile,BufRead *.rc     set syntax=sh
+autocmd BufNewFile,BufRead pkgfile  set syntax=sh
 
-autocmd BufNewFile,BufRead *.c set syntax=c
-autocmd BufNewFile,BufRead *.hs set syntax=haskell
-autocmd BufNewFile,BufRead *.txt set syntax=off
-autocmd BufNewFile,BufRead *.md set syntax=md
+autocmd BufNewFile,BufRead *.c      set syntax=c
+autocmd BufNewFile,BufRead *.hs     set syntax=haskell
+autocmd BufNewFile,BufRead *.txt    set syntax=off
+autocmd BufNewFile,BufRead *.md     set syntax=md
+autocmd BufNewFile,BufRead *.tex    set syntax=tex
 
 "Nerdtree toggle Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
-let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowExpandable  = ''
 let g:NERDTreeDirArrowCollapsible = ''
 
 "Open Nerdtree if no files were specified 
-autocmd StdinReadPre * let s:std_in=1
+autocmd StdinReadPre * let s:std_in = 1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 "IndentGuide
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size = 1
+let g:indent_guides_guide_size            = 1
 set ts=2 sw=2 et
 
 "Rainbow Parentheses
-let g:rainbow_active = 1
+let g:rainbow_active   = 1
+let g:rainbow_ctermfgs = ['green', 'yellow', 'cyan', 'magenta', 'red']
 
 "Markdown
-let g:vim_markdown_folding_style_pythonic = 1
-let g:vim_markdown_conceal = 2
-let g:vim_markdown_new_list_item_indent = 2
+let g:vim_markdown_folding_style_pythonic    = 1
+let g:vim_markdown_conceal                   = 2
+let g:vim_markdown_new_list_item_indent      = 2
 let g:vim_markdown_no_extensions_in_markdown = 1
 
+let vim_markdown_preview_github              = 1
+let vim_markdown_preview_hotlkey             = '<C-p>'
+
 "Vimtex settings
-let g:tex_flavor='latex'
-let g:vimtex_view_general_viewer='zathura'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_open_on_warning=0
-let g:vimtex_quickfix_mode=0
-let g:vimtex_compiler_method='latexmk'
+let g:tex_flavor                      = 'latex'
+let g:vimtex_view_general_viewer      = 'zathura'
+let g:vimtex_view_method              = 'zathura'
+let g:vimtex_quickfix_open_on_warning = 0
+let g:vimtex_quickfix_mode            = 0
+let g:vimtex_compiler_method          = 'latexmk'
 set conceallevel=1
-let g:tex_conceal='abdmg'
+let g:tex_conceal                     = 'abdmg'
 
 "Snippets settings
 set runtimepath+=~/.vim/ultisnippets
-let g:UltiSnipsSnippetDir='~/.vim/UltiSnips'
-"let g:UltiSnipsSnippetDirectories=["UltiSnips"]
-let g:UltiSnipsEditSplit='vertical'
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsSnippetDir          = '~/.vim/UltiSnips'
+let g:UltiSnipsEditSplit           = 'vertical'
+let g:UltiSnipsExpandTrigger       = '<tab>'
+let g:UltiSnipsJumpForwardTrigger  = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 "Python Code Folding enable
-let g:SimpylFold_docstring_preview = 1
-
-"PEP-8 Python Indentation
-"au BufNewFile,BufRead *.py
-"    \ set tabstop=4
-"    \ set softtabstop=4
-"    \ set shiftwidth=4
-"    \ set textwidth=79
-"    \ set expandtab
-"    \ set autoindent
-"    \ set fileformat=unix
+let g:SimpylFold_docstring_preview   = 1
 
 "Python highlight
-let python_highlight_all=1
+let g:python_highlight_indent_errors = 0
+let g:python_highlight_space_errors  = 0
 
 "i3 Config highlight
 aug i3config_ft_detection
@@ -159,23 +166,25 @@ aug end
 
 "tldr options
 let g:tldr_directory_path = '~/.cache/tldr'
-let g:tldr_split_type = 'horizontal'
+let g:tldr_split_type     = 'horizontal'
 
+"Airline theme
+let g:airline_theme = 'luna'
 
 "Ale linting
-let g:ale_sign_error='!'
-let g:ale_sign_warning='--'
+let g:ale_sign_error   = '!'
+let g:ale_sign_warning = '--'
 "E & W colors
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 "Show in Statusline
-let g:airline#extensions#ale#enables=1
+let g:airline#extensions#ale#enables = 1
 "Error Message format
-let g:ale_echo_msg_error_str='E'
-let g:ale_echo_msg_warning_str='W'
-let g:ale_echo_msg_format='[%linter%] %s [%severity%]'
+let g:ale_echo_msg_error_str   = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format      = '[%linter%] %s [%severity%]'
 "Only run on :w (saves battery)
-let g:ale_lint_on_text_changed='never'
-let g:ale_lint_on_insert_leave='never'
-let g:ale_lint_on_enter=0
-let g:ale_lint_on_save=1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 'never'
+let g:ale_lint_on_enter        = 0
+let g:ale_lint_on_save         = 1
