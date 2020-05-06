@@ -79,7 +79,6 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'sirver/ultisnips'
 Plug 'lervag/vimtex'
 Plug 'tmhedberg/SimpylFold'
@@ -130,9 +129,6 @@ let g:vim_markdown_conceal                   = 2
 let g:vim_markdown_new_list_item_indent      = 2
 let g:vim_markdown_no_extensions_in_markdown = 1
 
-let vim_markdown_preview_github              = 1
-let vim_markdown_preview_hotlkey             = '<C-p>'
-
 "Vimtex settings
 let g:tex_flavor                      = 'latex'
 let g:vimtex_view_general_viewer      = 'zathura'
@@ -172,8 +168,8 @@ let g:tldr_split_type     = 'horizontal'
 let g:airline_theme = 'luna'
 
 "Ale linting
-let g:ale_sign_error   = '!'
-let g:ale_sign_warning = '--'
+let g:ale_sign_error   = '❌'
+let g:ale_sign_warning = '⚠️'
 "E & W colors
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign

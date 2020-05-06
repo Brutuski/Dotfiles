@@ -75,6 +75,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
+  fzf
 	git
 	zsh-syntax-highlighting
 	zsh-autosuggestions
@@ -109,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 #  / ____ \| | | (_| \__ \
 # /_/    \_\_|_|\__,_|___/
 
-alias zshconfig="vim ~/.zshrc"
+alias zshrc="vim ~/.zshrc"
 alias i3config="vim ~/.config/i3/config"
 alias vimrc="vim ~/.vimrc"
 
