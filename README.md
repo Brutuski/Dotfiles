@@ -7,7 +7,7 @@ Desktop Dotfiles Repo
 + **Theme**:           [Nordic](https://github.com/EliverLara/Nordic)
 + **Colors**:          [Dracula](https://github.com/dracula/dracula-theme)
 + **Tilix theme**:     [Dracula](https://github.com/dracula/tilix)
-+ **Icons**            [Paper](https://snwh.org/paper)
++ **Icons**:            [Paper](https://snwh.org/paper)
 
 
 ## Dotfiles for:
@@ -38,7 +38,7 @@ Desktop Dotfiles Repo
 
 | Key Combination | Function |
 | ---- | ---- |
-| `mod+return`  | tilix |
+| `mod+return`  | Tilix |
 | `mod+t`       | TexStudio |
 | `mod+z`       | Zathura PDF |
 | `mod+d`       | Rofi drun |
@@ -50,15 +50,15 @@ Desktop Dotfiles Repo
 | `mod+control+k` | Backlight +10 |
 | `mod+control+j` | Backlight -10 |
 | `mod+F1`        | Lock Screen |
-| `mod+r`         | Reload i3 config |
+| `mod+shift+r`   | Reload i3 config |
 | `mod+num`       | Move to corresponding Workspace |
 | `Print`         | Screenshot |
 
 
 ## Basic Guidelines for setup
-+ Install i3-Gaps, from [AUR](https://www.archlinux.org/packages/community/x86_64/i3-gaps/) for example. Go through basic setup as prompted.
-+ i3 config goes to `~/.config/i3/config`. Replace the config with the one in the repo here. For further options refer to the [official docs](https://i3wm.org/docs/userguide.html).
-+ Install Polybar, from [AUR](https://aur.archlinux.org/packages/polybar/). All configs and scripts for Polybar are places in `~/.config/polybar/`. Polybar is launched using launch.sh script executed by i3 config on startup.
++ Install i3-Gaps-Rounded, from [AUR](https://aur.archlinux.org/packages/i3-gaps-rounded-git/). Logout and choose i3-gaps to get started with setup prompt.
++ i3 config is found in `~/.config/i3/config`. Replace the config with the one in the repo here. For further options refer to the [official docs](https://i3wm.org/docs/userguide.html).
++ Install Polybar, from [AUR](https://aur.archlinux.org/packages/polybar/). All configs and scripts for Polybar are places in `~/.config/polybar/`. Polybar is launched using [launch.sh](https://github.com/Brutuski/Dotfiles/blob/master/.config/polybar/launch.sh) script executed by i3 config on startup ([_line141](https://github.com/Brutuski/Dotfiles/blob/aa1afd24a7527cae670f380f3b5499026c2df987/.config/i3/config#L141)).
 + [Feh](https://wiki.archlinux.org/index.php/Feh) is used to set the wallpaper on startup. Executed by i3 on config on startup as well. Installed via [AUR](https://www.archlinux.org/packages/extra/x86_64/feh/).
 + Screen lock setup using [i3lock](https://i3wm.org/i3lock/). Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/i3lock/).
 
@@ -71,4 +71,4 @@ Powermenu ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screens
 Ufetch ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/ufetch.png)
 Rofi ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Rofi.png)
 Vim ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Vimi3config.png)
-Tilix tabs ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/vim%2Bgotop%2Bvimrc.png)
+Tiling showcase ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/vim%2Bgotop%2Bvimrc.png)
