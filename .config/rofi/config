@@ -1,6 +1,6 @@
-rofi.show-icons:            true
-rofi.modi:                  drun,run
-rofi.show-match:	    true
+rofi.show-icons:          true
+rofi.modi:                drun,run
+rofi.show-match:	        true
 rofi.drun-icon-theme:	    Papirus
 
 rofi.location:		    0
@@ -14,5 +14,5 @@ rofi.separator-style:       dotted
 rofi.hide-scrollbar:        true
 rofi.line-margin:           0
 rofi.font:                  Hack Bold Nerd Font 12
-rofi.theme:		    ~/.config/rofi/themes/nord.rasi
+rofi.theme:		    ~/.config/rofi/themes/dracula.rasi
 rofi.terminal:		    tilix
