@@ -309,8 +309,11 @@ for_window [class="Matplotlib"] floating enable
 #  / /__| (_) | | (_) | |  \__ \
 #  \____/\___/|_|\___/|_|  |___/
 
-#colors:                border  backgr. text    indicator
-client.focused          #50FA7B #007030 #ffffff #2b2b2b
-client.focused_inactive #FFB86C #2b2b2b #ffffff #2b2b2b
-client.unfocused        #F1FA8C #2b2b2b #ffffff #2b2b2b
-client.urgent           #FF5555 #900000 #ffffff #2b2b2b
+# class                 border  bground text    indicator child_border
+client.focused          #50FA7B #6272A4 #F8F8F2 #6272A4   #50FA7B
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+client.background       #F8F8F2
