@@ -1,13 +1,13 @@
 # Dotfiles
 Desktop Dotfiles Repo
-+ **OS**:              Arch Linux x86_64
-+ **Shell**:           ZSH (managed and customized via [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh))
-+ **Terminal**:        [Tilix](https://github.com/gnunn1/tilix) _with customized_ [Powerlevel10k theme](https://github.com/romkatv/powerlevel10k)
++ **OS**:              [Arch Linux x86_64](https://wiki.archlinux.org/index.php/Installation_guide)
++ **Shell**:           [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) (managed and customized via [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh))
++ **Terminal**:        [Tilix](https://github.com/gnunn1/tilix) with customized [Powerlevel10k theme](https://github.com/romkatv/powerlevel10k)
 + **Windows Manager**: [13-Gaps-Rounded](https://github.com/resloved/i3)
 + **Theme**:           [Nordic](https://github.com/EliverLara/Nordic)
 + **Colors**:          [Dracula](https://github.com/dracula/dracula-theme)
 + **Tilix theme**:     [Dracula](https://github.com/dracula/tilix)
-+ **Icons**:            [Paper](https://snwh.org/paper)
++ **Icons**:           [Paper](https://snwh.org/paper)
 
 
 ## Dotfiles for:
@@ -20,6 +20,14 @@ Desktop Dotfiles Repo
 [**Dunst**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/dunst) | Notifications daemon. Extremely configurable and lightweight |  [Github](https://github.com/dunst-project/dunst)
 [**Vim**](https://github.com/Brutuski/Dotfiles/blob/master/.vimrc) | Preferred Editor. Endless plugins and supports every kind of programing & markdown language. Available on every OS. | [Github](https://github.com/vim/vim)
 [**Zathura**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/zathura) | Lightweight PDF reader with a focus on reading. Vim keybindings support  |  [Github](https://github.com/pwmt/zathura)
+
+### Zsh plugins:
++ [fzf](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf)
++ [git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
++ [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
++ [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
++ [colored-man-pages](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages)
++ [colorize](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colorize)
 
 
 ### Fonts
@@ -58,13 +66,13 @@ Desktop Dotfiles Repo
 ## Basic Guidelines for setup
 + Install i3-Gaps-Rounded, from [AUR](https://aur.archlinux.org/packages/i3-gaps-rounded-git/). Logout and choose i3-gaps to get started with setup prompt.
 + i3 config is found in `~/.config/i3/config`. Replace the config with the one in the repo here. For further options refer to the [official docs](https://i3wm.org/docs/userguide.html).
-+ Install Polybar, from [AUR](https://aur.archlinux.org/packages/polybar/). All configs and scripts for Polybar are places in `~/.config/polybar/`. Polybar is launched using [launch.sh](https://github.com/Brutuski/Dotfiles/blob/master/.config/polybar/launch.sh) script executed by i3 config on startup ([_line141](https://github.com/Brutuski/Dotfiles/blob/aa1afd24a7527cae670f380f3b5499026c2df987/.config/i3/config#L141)).
++ Install Polybar, from [AUR](https://aur.archlinux.org/packages/polybar/). All configs and scripts for Polybar are found in `~/.config/polybar/`. Polybar is launched using [launch.sh](https://github.com/Brutuski/Dotfiles/blob/master/.config/polybar/launch.sh) script executed by i3 config on startup ([_line141_](https://github.com/Brutuski/Dotfiles/blob/aa1afd24a7527cae670f380f3b5499026c2df987/.config/i3/config#L141)).
 + [Feh](https://wiki.archlinux.org/index.php/Feh) is used to set the wallpaper on startup. Executed by i3 on config on startup as well. Installed via [AUR](https://www.archlinux.org/packages/extra/x86_64/feh/).
 + Screen lock setup using [i3lock](https://i3wm.org/i3lock/). Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/i3lock/).
 
 
 ## Screenshots
-+ Taken using [Scrot](https://github.com/resurrecting-open-source-projects/scrot). _Print_ Key is mapped in the i3 config to execute scrot command. Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/scrot/). [Wallpaper Source](https://www.artstation.com/artwork/mQLe1).
++ Taken using [Scrot](https://github.com/resurrecting-open-source-projects/scrot). `Print Scr` Key is mapped in the i3 config to execute scrot command. Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/scrot/). [Wallpaper Source](https://www.artstation.com/artwork/mQLe1).
 
 Desktop ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Desktop.png)
 Powermenu ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Powermenu.png)

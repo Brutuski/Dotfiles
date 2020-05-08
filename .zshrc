@@ -80,9 +80,7 @@ plugins=(
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 	colored-man-pages
-	colorize
-	command-not-found
-	common-aliases)
+  colorize)
 
 source $ZSH/oh-my-zsh.sh
 
