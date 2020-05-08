@@ -1,8 +1,8 @@
 # Dotfiles
 Desktop Dotfiles Repo
 + **OS**:              Arch Linux x86_64
-+ **Shell**:           ZSH
-+ **Terminal**:        [Tilix](https://github.com/gnunn1/tilix) _with_ [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
++ **Shell**:           ZSH (managed and customized via [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh))
++ **Terminal**:        [Tilix](https://github.com/gnunn1/tilix) _with customized_ [Powerlevel10k theme](https://github.com/romkatv/powerlevel10k)
 + **Windows Manager**: [13-Gaps-Rounded](https://github.com/resloved/i3)
 + **Theme**:           [Nordic](https://github.com/EliverLara/Nordic)
 + **Colors**:          [Dracula](https://github.com/dracula/dracula-theme)
@@ -26,7 +26,7 @@ Desktop Dotfiles Repo
 #### System Font
 + [**Hack Nerd Mono**](https://github.com/ryanoasis/nerd-fonts)
 #### Icon Font (for Polybar)
-+ [**Wuncon Siji**](https://github.com/stark/siji)
++ [**Font Awesome**](https://fontawesome.com/)
 
 
 ### Basic Keybindings
@@ -38,20 +38,21 @@ Desktop Dotfiles Repo
 
 | Key Combination | Function |
 | ---- | ---- |
-| `mod+return` | tilix |
-| `mod+t` | TexStudio |
-| `mod+z` | Zathura PDF |
-| `mod+d` | Rofi drun |
-| `sup+w` | Rofi window changer |
+| `mod+return`  | tilix |
+| `mod+t`       | TexStudio |
+| `mod+z`       | Zathura PDF |
+| `mod+d`       | Rofi drun |
+| `sup+w`       | Rofi window changer |
+| `mod+shift+s` | Rofi powermenu |
 
 | Key Combination | Function |
 | ---- | ---- |
 | `mod+control+k` | Backlight +10 |
 | `mod+control+j` | Backlight -10 |
-| `mod+F1` | Lock Screen |
-| `mod+r` | Reload i3 config |
-| `mod+num` | Move to corresponding Workspace |
-| `Print` | Screenshot |
+| `mod+F1`        | Lock Screen |
+| `mod+r`         | Reload i3 config |
+| `mod+num`       | Move to corresponding Workspace |
+| `Print`         | Screenshot |
 
 
 ## Basic Guidelines for setup
