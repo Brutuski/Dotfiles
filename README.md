@@ -1,4 +1,9 @@
 # Dotfiles
+
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Brutuski/Dotfiles/blob/master/LICENSE)
+
+
 Desktop Dotfiles Repo
 + **OS**:              [Arch Linux x86_64](https://wiki.archlinux.org/index.php/Installation_guide)
 + **Shell**:           [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) (managed and customized via [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh))

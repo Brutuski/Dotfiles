@@ -168,17 +168,17 @@ font pango:Hack Nerd Mono 8
 
 # GAP VARIABLES
 set $inner 10
-set $outer 0
+set $outer 5
 
 # SET GAPS
 gaps inner $inner
 gaps outer $outer
 
 # ROUNDED CORNERS
-set $thick 16
-border_radius 10
+set $thick 15
+border_radius 8
 
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
 # Gaps only when there is more than 1 Window in container
 #smart_gaps on
