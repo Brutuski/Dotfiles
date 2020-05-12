@@ -7,7 +7,7 @@ discharging=$(acpi | grep -o "Discharging")
 full=$(acpi | grep -o "Full")
 
 if [ "$charging" = "Charging" ]; then
-	echo "  Charging |"
+	echo "  $time Charging |"
 fi
 
 if [ "$discharging" = "Discharging" ]; then 
