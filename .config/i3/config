@@ -26,7 +26,7 @@ set $sup Mod4
 # MOUSE related settings
 
 # Enable tap to click
-exec_always xinput set-prop 14 335 1
+exec_always xinput set-prop 19 335 1
 
 # Right click toggles floating
 #bindsym --whole-window $mod+button2 floating toggle
@@ -119,6 +119,9 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# switch between 2 workspaces
+bindsym $mod+Tab workspace back_and_forth
+
 #   _____ _             _               
 #  / ____| |           | |              
 # | (___ | |_ __ _ _ __| |_ _   _ _ __  
@@ -140,11 +143,11 @@ exec --no-startup-id nm-applet
 # Launch Polybar during startup
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# Compton: Shadows + corners
-exec_always --no-startup-id compton --config ~/.config/i3/compton.conf
+# Picom
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # Set Wallpaper using feh on startup
-exec_always ~/fehbg.sh
+exec_always --no-startup-id feh --bg-scale ~/Documents/Chrome-Downloads/Engine.jpg
 
 # LANGUAGE INPUT
 # Language toggle and other settings in /etc/X11/xorg.conf.d

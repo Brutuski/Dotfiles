@@ -19,6 +19,7 @@ Desktop Dotfiles Repo
 | Dependency | Description | Source
 | ---- | ---- | ---- |
 | [**i3-Gaps-Rounded**](https://github.com/resloved/i3) | Windows Manager, fork of i3-Gaps | [Github](https://github.com/Airblader/i3)
+[**Picom**](https://github.com/Brutuski/Dotfiles/blob/master/.config/picom/picom.conf)| Compositor for Xorg  | [Github](https://github.com/yshui/picom)
 [**Polybar**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/polybar)| For Statusbar config  | [Github](https://github.com/polybar/polybar)
 [**Ranger**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/ranger) | Terminal based file manager with vim keybindings |  [Github](https://github.com/davatorium/rofi)
 [**Rofi**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/rofi)  | Appliation launcher and much more. Fully configurable |  [Github](https://github.com/ranger/ranger)
