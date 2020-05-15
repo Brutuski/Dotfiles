@@ -78,7 +78,6 @@ Plug 'luochen1990/rainbow'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
 Plug 'sirver/ultisnips'
 Plug 'lervag/vimtex'
 Plug 'tmhedberg/SimpylFold'
@@ -94,16 +93,15 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 "Syntax
-autocmd BufNewFile,BufRead *.config set syntax=sh
-autocmd BufNewFile,BufRead *.conf   set syntax=sh
-autocmd BufNewFile,BufRead *.rc     set syntax=sh
-autocmd BufNewFile,BufRead pkgfile  set syntax=sh
-
-autocmd BufNewFile,BufRead *.c      set syntax=c
-autocmd BufNewFile,BufRead *.hs     set syntax=haskell
-autocmd BufNewFile,BufRead *.txt    set syntax=off
-autocmd BufNewFile,BufRead *.md     set syntax=md
-autocmd BufNewFile,BufRead *.tex    set syntax=tex
+autocmd BufNewFile,BufRead *.config           set syntax=sh
+autocmd BufNewFile,BufRead *.conf             set syntax=sh
+autocmd BufNewFile,BufRead *.rc               set syntax=sh
+autocmd BufNewFile,BufRead pkgfile            set syntax=sh
+autocmd BufNewFile,BufFilePre,BufRead *.md    set filetype=markdown.pandoc
+autocmd BufNewFile,BufRead *.c                set syntax=c
+autocmd BufNewFile,BufRead *.hs               set syntax=haskell
+autocmd BufNewFile,BufRead *.txt              set syntax=off
+autocmd BufNewFile,BufRead *.tex              set syntax=tex
 
 "Nerdtree toggle Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
@@ -122,12 +120,6 @@ set ts=2 sw=2 et
 "Rainbow Parentheses
 let g:rainbow_active   = 1
 let g:rainbow_ctermfgs = ['green', 'yellow', 'cyan', 'magenta', 'red']
-
-"Markdown
-let g:vim_markdown_folding_style_pythonic    = 1
-let g:vim_markdown_conceal                   = 2
-let g:vim_markdown_new_list_item_indent      = 2
-let g:vim_markdown_no_extensions_in_markdown = 1
 
 "Vimtex settings
 let g:tex_flavor                      = 'latex'
