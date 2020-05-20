@@ -27,6 +27,7 @@ Desktop Dotfiles Repo
 [**Vim**](https://github.com/Brutuski/Dotfiles/blob/master/.vimrc) | Preferred Editor. Endless plugins and supports every kind of programing & markdown language. Available on every OS. | [Github](https://github.com/vim/vim)
 [**Zathura**](https://github.com/Brutuski/DesktopDotfiles/tree/master/.config/zathura) | Lightweight PDF reader with a focus on reading. Vim keybindings support  |  [Github](https://github.com/pwmt/zathura)
 
+
 ### Zsh plugins:
 + [fzf](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf)
 + [git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
@@ -53,6 +54,7 @@ Desktop Dotfiles Repo
 | Key Combination | Function |
 | ---- | ---- |
 | `mod+return`  | Tilix |
+| `sup+return`  | Tilix --quake |
 | `mod+t`       | TexStudio |
 | `mod+z`       | Zathura PDF |
 | `mod+d`       | Rofi drun |
