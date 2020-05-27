@@ -38,9 +38,10 @@ floating_modifier $mod
 # start Tilix
 bindsym $mod+Return exec tilix
 bindsym $sup+Return exec tilix --quake
-bindsym $mod+t exec texmaker
-bindsym $mod+z exec zathura
-bindsym $mod+f exec ranger
+bindsym $sup+t exec texmaker
+bindsym $sup+z exec zathura
+bindsym $sup+f exec ranger
+bindsym $sup+c exec code-oss
 
 # Start rofi
 bindsym $mod+d exec --no-startup-id rofi -show
