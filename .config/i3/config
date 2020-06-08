@@ -306,6 +306,7 @@ for_window [class="Transmission"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="wicd-client.py"] floating enable
 for_window [class="Matplotlib"] floating enable
+for_window [class="LightDM GTK+ Greeter: settings"] floating enable
 
 
 #     ___      _                
