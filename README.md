@@ -84,7 +84,7 @@ Desktop Dotfiles Repo
 
 Desktop ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Desktop.png)
 Powermenu ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Powermenu.png)
-Ufetch ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/ufetch.png)
+[afetch](https://github.com/Brutuski/a-fetch) ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/afetch.png)
 Rofi ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Rofi.png)
 Vim ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Vimi3config.png)
 Tiling showcase ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/vim%2Bgotop%2Bvimrc.png)
