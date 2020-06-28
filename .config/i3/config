@@ -26,7 +26,7 @@ set $sup Mod4
 # MOUSE related settings
 
 # Enable tap to click
-exec_always xinput set-prop 19 335 1
+exec_always xinput set-prop 13 317 1
 
 # Right click toggles floating
 #bindsym --whole-window $mod+button2 floating toggle
@@ -59,7 +59,7 @@ bindsym $mod+Control+j exec light -U 10
 bindsym $mod+Shift+q kill
 
 # Lock screen using i3lock
-bindsym $mod+F1 exec --no-startup-id i3lock -i ~/Documents/Chrome-Downloads/Lockscreen.png -p default -n
+bindsym $sup+F1 exec --no-startup-id i3lock -i ~/Documents/Chrome-Downloads/Lockscreen.png -p default -n
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
@@ -149,7 +149,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # Set Wallpaper using feh on startup
-exec_always --no-startup-id feh --bg-scale ~/Documents/Chrome-Downloads/Engine.jpg
+exec_always --no-startup-id feh --bg-scale ~/Documents/Chrome-Downloads/Mountains.jpg
 
 # LANGUAGE INPUT
 # Language toggle and other settings in /etc/X11/xorg.conf.d
@@ -159,7 +159,7 @@ exec_always setxkbmap -layout us,de
 exec_always --no-startup-id dunst
 
 # Start Wallpaper blur
-exec_always --no-startup-id "~/.config/polybar/scripts/wallblur.sh -i ~/Documents/Chrome-Downloads/Engine.jpg"
+exec_always --no-startup-id "~/.config/polybar/scripts/wallblur.sh -i ~/Documents/Chrome-Downloads/Mountains.jpg"
 
 # __      ___                 _ 
 # \ \    / (_)               | |
@@ -172,7 +172,7 @@ exec_always --no-startup-id "~/.config/polybar/scripts/wallblur.sh -i ~/Document
 font pango:Hack Nerd Mono 8
 
 # GAP VARIABLES
-set $inner 10
+set $inner 5
 set $outer 5
 
 # SET GAPS
