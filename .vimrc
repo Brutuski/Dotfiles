@@ -1,10 +1,10 @@
-"  ____    ____  __  .___  ___. .______       ______ 
+"  ____    ____  __  .___  ___. .______       ______
 "  \   \  /   / |  | |   \/   | |   _  \     /      |
 "   \   \/   /  |  | |  \  /  | |  |_)  |   |  ,----'
-"    \      /   |  | |  |\/|  | |      /    |  |     
+"    \      /   |  | |  |\/|  | |      /    |  |
 "     \    /    |  | |  |  |  | |  |\  \--. |  `----.
 "      \__/     |__| |__|  |__| | _| `.___|  \______|
-"                                                     
+"
 
 syntax enable
 
@@ -55,8 +55,8 @@ set showmatch
 set mat=2
 
 "Theme
-packadd! dracula
-colorscheme dracula
+"packadd! dracula
+colorscheme lighthaus
 
 "Line number
 set number
@@ -80,12 +80,9 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'godlygeek/tabular'
 Plug 'sirver/ultisnips'
 Plug 'lervag/vimtex'
-Plug 'tmhedberg/SimpylFold'
 Plug 'KeitaNakamura/tex-conceal.vim'
-Plug 'vim-scripts/indentpython.vim'
 Plug 'dense-analysis/ale'
 Plug 'mboughaba/i3config.vim'
-Plug 'wlemuel/vim-tldr'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline-themes'
@@ -103,12 +100,18 @@ autocmd BufNewFile,BufRead *.hs               set syntax=haskell
 autocmd BufNewFile,BufRead *.txt              set syntax=off
 autocmd BufNewFile,BufRead *.tex              set syntax=tex
 
-"Nerdtree toggle Ctrl+n
+"CtrlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
+"Nerdtree toggle Ctrl+Shift+n
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable  = ''
 let g:NERDTreeDirArrowCollapsible = ''
 
-"Open Nerdtree if no files were specified 
+"Open Nerdtree if no files were specified
 autocmd StdinReadPre * let s:std_in = 1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
@@ -139,12 +142,6 @@ let g:UltiSnipsExpandTrigger       = '<tab>'
 let g:UltiSnipsJumpForwardTrigger  = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
-"Python Code Folding enable
-let g:SimpylFold_docstring_preview   = 1
-
-"Python highlight
-let g:python_highlight_indent_errors = 0
-let g:python_highlight_space_errors  = 0
 
 "i3 Config highlight
 aug i3config_ft_detection
@@ -152,21 +149,19 @@ aug i3config_ft_detection
 	au BufNewfile,BufRead ~/.config/i3/config set filetype=i3config
 aug end
 
-"tldr options
-let g:tldr_directory_path = '~/.cache/tldr'
-let g:tldr_split_type     = 'horizontal'
-
 "Airline theme
-let g:airline_theme = 'luna'
+let g:airline_theme = 'jet'
+let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#tabline#left_sep = '||'
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'
 
 "Ale linting
 let g:ale_sign_error   = '❌'
-let g:ale_sign_warning = '⚠️'
+let g:ale_sign_warning = '❗'
 "E & W colors
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
-"Show in Statusline
-let g:airline#extensions#ale#enables = 1
 "Error Message format
 let g:ale_echo_msg_error_str   = 'E'
 let g:ale_echo_msg_warning_str = 'W'
