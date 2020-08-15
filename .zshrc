@@ -14,7 +14,8 @@ export ZSH="/home/adi/.oh-my-zsh"
 
 # Theme, set to 'random' to load a different theme at every startup
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="lighthaus"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -80,7 +81,8 @@ plugins=(
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 	colored-man-pages
-  colorize)
+  colorize
+  virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -119,7 +121,9 @@ alias gt='gotop -c monokai'
 alias cm='cmatrix'
 
 alias ':q'='exit'
+alias ':Q'='exit'
 alias ':l'='clear'
+alias ':L'='clear'
 
 # lsd aliases
 alias ls='lsd'
