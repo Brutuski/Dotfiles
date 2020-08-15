@@ -17,6 +17,8 @@
 #            __/ |                             __/ |    
 #           |___/                             |___/      
 
+#Git: https://github.com/Brutuski/Dotfiles
+
 # SET MOD KEY!!!
 set $mod Mod1
 
@@ -139,17 +141,14 @@ bindsym $mod+Tab workspace back_and_forth
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
 # Launch Polybar during startup
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Picom
-exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+exec_always --no-startup-id picom
 
 # Set Wallpaper using feh on startup
-exec_always --no-startup-id feh --bg-scale ~/Documents/Chrome-Downloads/Mountains.jpg
+exec_always --no-startup-id feh --bg-fill ~/Documents/Chrome-Downloads/Lighthaus-dark.png
 
 # LANGUAGE INPUT
 # Language toggle and other settings in /etc/X11/xorg.conf.d
@@ -169,21 +168,21 @@ exec_always --no-startup-id "~/.config/polybar/scripts/wallblur.sh -i ~/Document
 #     \/   |_|___/\__,_|\__,_|_|
 
 # Font for window titles.
-font pango:Hack Nerd Mono 8
+font pango:Hack Nerd Mono Regular 8
 
-# GAP VARIABLES
-set $inner 5
-set $outer 5
+# Gap Variables
+set $inner 10
+set $outer 0
 
-# SET GAPS
+# Set Gaps
 gaps inner $inner
 gaps outer $outer
 
-# ROUNDED CORNERS
+# Rounded Corners
 set $thick 15
-border_radius 8
+border_radius 3
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 3
 
 # Gaps only when there is more than 1 Window in container
 #smart_gaps on
@@ -307,6 +306,13 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="wicd-client.py"] floating enable
 for_window [class="Matplotlib"] floating enable
 for_window [class="LightDM GTK+ Greeter: settings"] floating enable
+for_window [class="konsole"] floating enable
+for_window [class="Termite"] floating enable
+for_window [class="Terminator"] floating enable
+for_window [class="Alacritty"] floating enable
+for_window [class="kitty"] floating enable
+for_window [class="Xfce4-terminal"] floating enable
+
 
 
 #     ___      _                
@@ -315,11 +321,23 @@ for_window [class="LightDM GTK+ Greeter: settings"] floating enable
 #  / /__| (_) | | (_) | |  \__ \
 #  \____/\___/|_|\___/|_|  |___/
 
-# class                 border  bground text    indicator child_border
-client.focused          #50FA7B #6272A4 #F8F8F2 #6272A4   #50FA7B
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+set $clr-bg               #21252D
+set $clr-fg               #FFEE79
+set $clr-border           #FFFF00
+set $clr-border-in        #6CA89D
+set $clr-border-un        #282A36
+set $clr-border-ur        #F23939
+set $clr-border-pl        #44B273
+set $clr-indicator        #FFFF00
+set $clr-indicator-ur     #F23939
+set $clr-indicator-pl     #44B273
 
-client.background       #F8F8F2
+
+# Class                   Border          Bg        Text        Indicator           Child_border
+client.focused            $clr-border     $clr-bg   $clr-fg     $clr-indicator      $clr-border
+client.focused_inactive   $clr-border-in  $clr-bg   $clr-fg     $clr-indicator      $clr-border-in
+client.unfocused          $clr-border-un  $clr-bg   $clr-fg     $clr-indicator      $clr-border-un
+client.urgent             $clr-border-ur  $clr-bg   $clr-fg     $clr-indicator-ur   $clr-border-ur
+client.placeholder        $clr-border-pl  $clr-bg   $clr-fg     $clr-indicator-pl   $clr-border-pl
+
+client.background         $clr-bg
