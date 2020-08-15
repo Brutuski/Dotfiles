@@ -9,7 +9,7 @@ set smooth-scroll true
 set zoom-step 10
 set scroll-step 150
 
-set guioptions ""
+set guioptions "s"
 set page-padding 10
 
 #Fit width 
@@ -20,7 +20,10 @@ set window-title-home-tilde true
 set statusbar-basename true
 
 #Font
-set font "Hack Nerd Mono 10"
+set font "Cantarell Regular Thin 12"
+
+#Recolor
+set recolor true
 
 #Key bindings
 map [normal]		<F11> toggle_fullscreen
@@ -28,32 +31,44 @@ map [fullscreen]	<F11> toggle_fullscreen
 map n			navigate next
 map p			navigate previous
 
+# Lighthaus Colors:
 
-#Colors
-set completion-bg "#282828"
-set completion-fg "#ebdbb2"
-set completion-group-bg "#282828"
-set completion-group-fg "#98971a"
-set completion-highlight-bg "#ebdbb2"
-set completion-highlight-fg "#282828"
+set notification-error-bg       "#FC2929" # Red
+set notification-error-fg       "#18191E" # Foreground
+set notification-warning-bg     "#E25600" # Orange
+set notification-warning-fg     "#18191E" # Selection
+set notification-bg             "#D68EB2" # Background
+set notification-fg             "#18191E" # Foreground
 
-set recolor-lightcolor "#282828"
-set recolor-darkcolor "#ebdbb2"
-set default-bg "#282828"
+set completion-bg               "#18191E" # Background
+set completion-fg               "#44B273" # Comment
+set completion-group-bg         "#18191E" # Background
+set completion-group-fg         "#44B273" # Comment
+set completion-highlight-bg     "#21252D" # Selection
+set completion-highlight-fg     "#FFFF00" # Foreground
 
-set inputbar-bg "#282828"
-set inputbar-fg "#ebdbb2"
-set notification-bg "#282828"
-set notification-fg "#ebdbb2"
-set notification-error-bg "#cc241d"
-set notification-error-fg "#ebdbb2"
-set notification-warning-bg "#cc241d"
-set notification-warning-fg "#ebdbb2"
-set statusbar-bg "#282828"
-set statusbar-fg "#ebdbb2"
-set index-bg "#282828"
-set index-fg "#ebdbb2"
-set index-active-bg "#ebdbb2"
-set index-active-fg "#282828"
-set render-loading-bg "#282828"
-set render-loading-fg "#ebdbb2"
+set index-bg                    "#18191E" # Background
+set index-fg                    "#44B273" # Foreground
+set index-active-bg             "#21252D" # Current Line
+set index-active-fg             "#FFFF00" # Foreground
+
+set inputbar-bg                 "#21252D" # Background
+set inputbar-fg                 "#FFFADE" # Foreground
+set statusbar-bg                "#21252D" # Background
+set statusbar-fg                "#D68EB2" # Foreground
+
+set highlight-color             "#D68EB2" # Orange
+set highlight-active-color      "#ff79c6" # Pink
+
+set default-bg                  "#18191E" # Background
+set default-fg                  "#FFEE79" # Foreground
+
+set render-loading              true
+set render-loading-fg           "#FFEE79" # Background
+set render-loading-bg           "#18191E" # Foreground
+
+# Recolor mode settings
+
+set recolor-lightcolor          "#21252D" # Background
+set recolor-darkcolor           "#FFEE79" # Foreground
+
