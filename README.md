@@ -3,15 +3,15 @@
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Brutuski/Dotfiles/blob/master/LICENSE)
 
+![Home](https://raw.githubusercontent.com/Brutuski/Dotfiles/master/Screenshots/home.png)
 
 Desktop Dotfiles Repo
 + **OS**:              [Arch Linux x86_64](https://wiki.archlinux.org/index.php/Installation_guide)
 + **Shell**:           [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) (managed and customized via [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh))
-+ **Terminal**:        [Tilix](https://github.com/gnunn1/tilix) with customized [Powerlevel10k theme](https://github.com/romkatv/powerlevel10k)
-+ **Windows Manager**: [13-Gaps-Rounded](https://github.com/resloved/i3)
-+ **Theme**:           [Nordic](https://github.com/EliverLara/Nordic)
-+ **Colors**:          [Dracula](https://github.com/dracula/dracula-theme)
-+ **Tilix theme**:     [Dracula](https://github.com/dracula/tilix)
++ **Terminal**:        [Tilix](https://github.com/gnunn1/tilix)
++ **Windows Manager**: [i3-Gaps-Rounded](https://github.com/resloved/i3)
++ **Theme & Colors**:           [Lighthaus Theme](https://github.com/lighthaus-theme) (*Coming Soon*)
++ **Tilix theme**:     [Lighthaus Theme](https://github.com/lighthaus-theme) (*Coming Soon*)
 + **Icons**:           [Paper](https://snwh.org/paper)
 
 
@@ -35,11 +35,12 @@ Desktop Dotfiles Repo
 + [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 + [colored-man-pages](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages)
 + [colorize](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colorize)
++ [virtualenv](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/virtualenv)
 
 
 ### Fonts
 #### System Font
-+ [**Hack Nerd Mono**](https://github.com/ryanoasis/nerd-fonts)
++ [**Hack Nerd Mono Regular**](https://github.com/ryanoasis/nerd-fonts)
 #### Icon Font (for Polybar)
 + [**Font Awesome**](https://fontawesome.com/)
 
@@ -51,6 +52,8 @@ Desktop Dotfiles Repo
 | `win` | sup in i3 |
 | `win+space` | Toggle between US and DE lamguage input |
 
+</br>
+
 | Key Combination | Function |
 | ---- | ---- |
 | `mod+return`  | Tilix |
@@ -60,6 +63,8 @@ Desktop Dotfiles Repo
 | `mod+d`       | Rofi drun |
 | `sup+w`       | Rofi window changer |
 | `mod+shift+s` | Rofi powermenu |
+
+</br>
 
 | Key Combination | Function |
 | ---- | ---- |
@@ -80,11 +85,15 @@ Desktop Dotfiles Repo
 
 
 ## Screenshots
-+ Taken using [Scrot](https://github.com/resurrecting-open-source-projects/scrot). `Print Scr` Key is mapped in the i3 config to execute scrot command. Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/scrot/). [Wallpaper Source](https://www.artstation.com/artwork/mQLe1).
++ Taken using [Scrot](https://github.com/resurrecting-open-source-projects/scrot). `Print Scr` Key is mapped in the i3 config to execute scrot command. Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/scrot/).</br>
+Wallpaper from  [Lighthaus Theme](https://github.com/lighthaus-theme) (*Coming Soon*)
 
-Desktop ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Desktop.png)
-Powermenu ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Powermenu.png)
-[afetch](https://github.com/Brutuski/a-fetch) ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/afetch.png)
-Rofi ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Rofi.png)
-Vim ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/Vimi3config.png)
-Tiling showcase ![Screenshot](https://github.com/Brutuski/Dotfiles/blob/master/Screenshots/vim%2Bgotop%2Bvimrc.png)
+Desktop + [afetch](https://github.com/Brutuski/a-fetch)  ![Screenshot](https://raw.githubusercontent.com/Brutuski/Dotfiles/master/Screenshots/afetch.png)
+
+Rofi & Dunst </br> ![Screenshot](https://raw.githubusercontent.com/Brutuski/Dotfiles/master/Screenshots/rofi%26dunst.png)
+
+Vim </br>
+![Screenshot](https://raw.githubusercontent.com/Brutuski/Dotfiles/master/Screenshots/vimi3.png)
+
+Zathura </br>
+![Screenshot](https://raw.githubusercontent.com/Brutuski/Dotfiles/master/Screenshots/zathura.png)
