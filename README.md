@@ -12,6 +12,7 @@ Desktop Dotfiles Repo
 + **Windows Manager**: [i3-Gaps-Rounded](https://github.com/resloved/i3)
 + **Theme & Colors**:           [Lighthaus Theme](https://github.com/lighthaus-theme) (*Coming Soon*)
 + **Tilix theme**:     [Lighthaus Theme](https://github.com/lighthaus-theme) (*Coming Soon*)
++ **Polybar Colors**:     [Lighthaus Theme](https://github.com/lighthaus-theme) (*Coming Soon*)
 + **Icons**:           [Paper](https://snwh.org/paper)
 
 
