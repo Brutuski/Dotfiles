@@ -214,7 +214,7 @@ timeout = 10
 frame_color = "#FC2929"
 foreground = "#FFFF00"
 background = "#18191E"
-timeout = 0
+timeout = 10
 
 
 # Every section that isn't one of the above is interpreted as a rules to
