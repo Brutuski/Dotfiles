@@ -23,7 +23,7 @@ set statusbar-basename true
 set font "Cantarell Regular Thin 12"
 
 #Recolor
-set recolor true
+set recolor false
 
 #Key bindings
 map [normal]		<F11> toggle_fullscreen
