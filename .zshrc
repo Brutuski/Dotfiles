@@ -64,27 +64,27 @@ ZSH_THEME="lighthaus"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-#  _____  _             _           
-# |  __ \| |           (_)          
-# | |__) | |_   _  __ _ _ _ __  ___ 
+#  _____  _             _
+# |  __ \| |           (_)
+# | |__) | |_   _  __ _ _ _ __  ___
 # |  ___/| | | | |/ _` | | '_ \/ __|
 # | |    | | |_| | (_| | | | | \__ \
 # |_|    |_|\__,_|\__, |_|_| |_|___/
-#                  __/ |            
-#                 |___/             
+#                  __/ |
+#                 |___/
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
   fzf
-	git
-	zsh-syntax-highlighting
-	zsh-autosuggestions
-	colored-man-pages
+  git
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  colored-man-pages
   colorize
   virtualenv)
 
-source $ZSH/oh-my-zsh.sh
+  source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -103,9 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-#           _ _           
-#     /\   | (_)          
-#    /  \  | |_  __ _ ___ 
+#           _ _
+#     /\   | (_)
+#    /  \  | |_  __ _ ___
 #   / /\ \ | | |/ _` / __|
 #  / ____ \| | | (_| \__ \
 # /_/    \_\_|_|\__,_|___/
@@ -130,6 +130,3 @@ alias ls='lsd'
 alias 'ls -a'='lsd -a'
 alias 'ls -l'='lsd -l'
 alias 'ls -al'='lsd -al'
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
