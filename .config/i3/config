@@ -145,7 +145,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id picom
 
 # Set Wallpaper using feh on startup
-exec_always --no-startup-id feh --bg-fill ~/Documents/Chrome-Downloads/Lighthaus-dark.png
+exec_always --no-startup-id feh --bg-fill ~/Documents/Chrome-Downloads/LOTR.jpg
 
 # LANGUAGE INPUT
 # Language toggle and other settings in /etc/X11/xorg.conf.d

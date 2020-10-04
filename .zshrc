@@ -64,6 +64,8 @@ ZSH_THEME="lighthaus"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+export TERM=xterm-256color
+
 #  _____  _             _
 # |  __ \| |           (_)
 # | |__) | |_   _  __ _ _ _ __  ___
@@ -114,7 +116,6 @@ alias zshrc="vim ~/.zshrc"
 alias i3config="vim ~/.config/i3/config"
 alias vimrc="vim ~/.vimrc"
 
-alias fast='./fast'
 alias wclock='./wclock.sh'
 alias ra='ranger'
 alias gt='gotop -c monokai'
@@ -124,6 +125,8 @@ alias ':q'='exit'
 alias ':Q'='exit'
 alias ':l'='clear'
 alias ':L'='clear'
+
+alias 'cd..'='cd ..'
 
 # lsd aliases
 alias ls='lsd'
