@@ -117,9 +117,7 @@ alias i3config="vim ~/.config/i3/config"
 alias vimrc="vim ~/.vimrc"
 
 alias wclock='./wclock.sh'
-alias ra='ranger'
-alias gt='gotop -c monokai'
-alias cm='cmatrix'
+alias 'speedtest-cli --secure'='speed'
 
 alias ':q'='exit'
 alias ':Q'='exit'

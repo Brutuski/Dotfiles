@@ -44,7 +44,7 @@ set smartcase
 set wildmode=longest,list,full
 
 "Set encoding
-set encoding=utf-8
+set encoding=UTF-8
 
 "Vim sets the window title
 set title
@@ -70,7 +70,7 @@ set nofoldenable
 call plug#begin('~/.vim/plugged')
 Plug 'lervag/vimtex'
 Plug 'arcticicestudio/nord-vim'
-Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
@@ -85,8 +85,8 @@ Plug 'dense-analysis/ale'
 Plug 'mboughaba/i3config.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'sheerun/vim-polyglot'
-Plug 'vim-airline/vim-airline-themes'
-
+"Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 "Syntax
@@ -145,16 +145,65 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 "i3 Config highlight
 aug i3config_ft_detection
-	au!
-	au BufNewfile,BufRead ~/.config/i3/config set filetype=i3config
+  au!
+  au BufNewfile,BufRead ~/.config/i3/config set filetype=i3config
 aug end
 
 "Airline theme
-let g:airline_theme = 'jet'
-let g:airline#extensions#tabline#enabled = 0
-let g:airline#extensions#tabline#left_sep = '||'
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#formatter = 'default'
+"let g:airline_theme = 'jet'
+"let g:airline#extensions#tabline#enabled = 0
+"let g:airline#extensions#tabline#left_sep = '||'
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+"let g:airline#extensions#tabline#formatter = 'default'
+"let g:airline#extensions#branch#enabled = 1
+
+"let g:airline_symbols = {}
+"let g:airline_symbols.linenr = '␊'
+"let g:airline_symbols.linenr = '␤'
+"let g:airline_symbols.linenr = '¶'
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.paste = 'ρ'
+"let g:airline_symbols.paste = 'Þ'
+"let g:airline_symbols.paste = '∥'
+"let g:airline_symbols.whitespace = 'Ξ'
+
+"Lightline
+
+if !has('gui_running')
+  set t_Co=256
+endif
+
+set laststatus=2
+
+let g:lightline = {
+      \ 'colorscheme': 'lighthaus',
+      \ 'component': {
+      \   'lineinfo': ' %3l:%-2v',
+      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+      \ },
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'readonly': 'LightlineReadonly',
+      \   'gitbranch': 'FugitiveHead',
+      \   'fugitive': 'LightlineFugitive'
+      \ },
+      \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
+      \ }
+function! LightlineReadonly()
+  return &readonly ? '' : ''
+endfunction
+
+function! LightlineFugitive()
+  if exists('*fugitive#head')
+    let branch = fugitive#head()
+    return branch != '' ? ''.branch : ''
+  endif
+  return ''
+endfunction
+
 
 "Ale linting
 let g:ale_sign_error   = '❌'
