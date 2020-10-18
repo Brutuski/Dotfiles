@@ -154,9 +154,6 @@ exec_always setxkbmap -layout us,de
 # Start Dunst
 exec_always --no-startup-id dunst
 
-# Start Wallpaper blur
-exec_always --no-startup-id "~/.config/polybar/scripts/wallblur.sh -i ~/Documents/Chrome-Downloads/Mountains.jpg"
-
 # __      ___                 _
 # \ \    / (_)               | |
 #  \ \  / / _ ___ _   _  __ _| |
