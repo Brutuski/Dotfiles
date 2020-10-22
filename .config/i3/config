@@ -34,8 +34,8 @@ exec_always xinput set-prop 13 317 1
 floating_modifier $mod
 
 #LAUNCH SHORTCUTS
-# start Tilix
-bindsym $mod+Return exec tilix
+# start Alacritty
+bindsym $mod+Return exec alacritty
 bindsym $sup+Return exec tilix --quake
 bindsym $sup+t exec texmaker
 bindsym $sup+z exec zathura
@@ -291,7 +291,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Always in floating mode
-#for_window [class="tilix"] floating enable
+for_window [class="Tilix"] floating enable
 for_window [class="Nautilus"] floating enable
 for_window [class="Gnome-calculator"] floating enable
 for_window [class="gedit"] floating enable
@@ -303,7 +303,7 @@ for_window [class="LightDM GTK+ Greeter: settings"] floating enable
 for_window [class="konsole"] floating enable
 for_window [class="Termite"] floating enable
 for_window [class="Terminator"] floating enable
-for_window [class="Alacritty"] floating enable
+#for_window [class="Alacritty"] floating enable
 for_window [class="kitty"] floating enable
 for_window [class="Xfce4-terminal"] floating enable
 
