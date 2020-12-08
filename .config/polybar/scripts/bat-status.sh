@@ -2,8 +2,8 @@
 
 time=$(acpi | grep -o "..:..:..")
 
-charging=$(acpi | grep -o "Charging")
-discharging=$(acpi | grep -o "Discharging")
+charging=$(cat /sys/class/power_supply/BAT1/status)
+discharging=$(cat /sys/class/power_supply/BAT1/status)
 full=$(acpi | grep -o "Full")
 
 if [ "$charging" = "Charging" ]; then
@@ -12,8 +12,4 @@ fi
 
 if [ "$discharging" = "Discharging" ]; then
 	echo "  $time"
-fi
-
-if [ "$full" = "Full" ]; then
-	echo " "
 fi
