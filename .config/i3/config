@@ -39,7 +39,8 @@ bindsym $mod+Return exec alacritty
 bindsym $sup+Return exec tilix --quake
 bindsym $sup+t exec texmaker
 bindsym $sup+z exec zathura
-bindsym $sup+f exec ranger
+bindsym $sup+f exec firefox
+bindsym $sup+g exec google-chrome
 bindsym $sup+c exec code-oss
 
 # Start rofi
@@ -145,7 +146,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id picom
 
 # Set Wallpaper using feh on startup
-exec_always --no-startup-id feh --bg-fill ~/Documents/Chrome-Downloads/LOTR.jpg
+exec_always --no-startup-id feh --bg-fill ~/BrowserDownloads/SpaceExplo.png
 
 # LANGUAGE INPUT
 # Language toggle and other settings in /etc/X11/xorg.conf.d
@@ -224,16 +225,16 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
-bindsym $mod+MOD4+1 workspace number $ws11
-bindsym $mod+MOD4+2 workspace number $ws12
-bindsym $mod+MOD4+3 workspace number $ws13
-bindsym $mod+MOD4+4 workspace number $ws14
-bindsym $mod+MOD4+5 workspace number $ws15
-bindsym $mod+MOD4+6 workspace number $ws16
-bindsym $mod+MOD4+7 workspace number $ws17
-bindsym $mod+MOD4+8 workspace number $ws18
-bindsym $mod+MOD4+9 workspace number $ws19
-bindsym $mod+MOD4+0 workspace number $ws20
+bindsym $mod+$sup+1 workspace number $ws11
+bindsym $mod+$sup+2 workspace number $ws12
+bindsym $mod+$sup+3 workspace number $ws13
+bindsym $mod+$sup+4 workspace number $ws14
+bindsym $mod+$sup+5 workspace number $ws15
+bindsym $mod+$sup+6 workspace number $ws16
+bindsym $mod+$sup+7 workspace number $ws17
+bindsym $mod+$sup+8 workspace number $ws18
+bindsym $mod+$sup+9 workspace number $ws19
+bindsym $mod+$sup+0 workspace number $ws20
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -246,16 +247,16 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
-bindsym $mod+MOD4+Shift+1 move container to workspace number $ws11
-bindsym $mod+MOD4+Shift+2 move container to workspace number $ws12
-bindsym $mod+MOD4+Shift+3 move container to workspace number $ws13
-bindsym $mod+MOD4+Shift+4 move container to workspace number $ws14
-bindsym $mod+MOD4+Shift+5 move container to workspace number $ws15
-bindsym $mod+MOD4+Shift+6 move container to workspace number $ws16
-bindsym $mod+MOD4+Shift+7 move container to workspace number $ws17
-bindsym $mod+MOD4+Shift+8 move container to workspace number $ws18
-bindsym $mod+MOD4+Shift+9 move container to workspace number $ws19
-bindsym $mod+MOD4+Shift+0 move container to workspace number $ws20
+bindsym $mod+$sup+Shift+1 move container to workspace number $ws11
+bindsym $mod+$sup+Shift+2 move container to workspace number $ws12
+bindsym $mod+$sup+Shift+3 move container to workspace number $ws13
+bindsym $mod+$sup+Shift+4 move container to workspace number $ws14
+bindsym $mod+$sup+Shift+5 move container to workspace number $ws15
+bindsym $mod+$sup+Shift+6 move container to workspace number $ws16
+bindsym $mod+$sup+Shift+7 move container to workspace number $ws17
+bindsym $mod+$sup+Shift+8 move container to workspace number $ws18
+bindsym $mod+$sup+Shift+9 move container to workspace number $ws19
+bindsym $mod+$sup+Shift+0 move container to workspace number $ws20
 
 # __          ___           _
 # \ \        / (_)         | |
@@ -303,7 +304,6 @@ for_window [class="LightDM GTK+ Greeter: settings"] floating enable
 for_window [class="konsole"] floating enable
 for_window [class="Termite"] floating enable
 for_window [class="Terminator"] floating enable
-#for_window [class="Alacritty"] floating enable
 for_window [class="kitty"] floating enable
 for_window [class="Xfce4-terminal"] floating enable
 
