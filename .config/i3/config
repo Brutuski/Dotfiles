@@ -146,7 +146,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id picom
 
 # Set Wallpaper using feh on startup
-exec_always --no-startup-id feh --bg-fill ~/BrowserDownloads/SpaceExplo.png
+exec_always --no-startup-id feh --bg-fill ~/BrowserDownloads/Wallpaper.jpg
 
 # LANGUAGE INPUT
 # Language toggle and other settings in /etc/X11/xorg.conf.d
