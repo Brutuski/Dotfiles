@@ -173,10 +173,6 @@ set $outer 0
 gaps inner $inner
 gaps outer $outer
 
-# Rounded Corners
-set $thick 15
-border_radius 3
-
 for_window [class="^.*"] border pixel 3
 
 # Gaps only when there is more than 1 Window in container

@@ -7,12 +7,12 @@
 
 Desktop Dotfiles Repo
 + **OS**:              [Arch Linux x86_64](https://wiki.archlinux.org/index.php/Installation_guide)
-+ **Shell**:           [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) (managed and customized via [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh))
-+ **Terminal**:        [Tilix](https://github.com/gnunn1/tilix)
-+ **Windows Manager**: [i3-Gaps-Rounded](https://github.com/resloved/i3)
-+ **Theme & Colors**:           [Lighthaus Theme](https://github.com/lighthaus-theme) (*Coming Soon*)
-+ **Tilix theme**:     [Lighthaus Theme](https://github.com/lighthaus-theme) (*Coming Soon*)
-+ **Polybar Colors**:     [Lighthaus Theme](https://github.com/lighthaus-theme) (*Coming Soon*)
++ **Shell**:           [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) _(managed and customized via [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh))_
++ **Terminal**:        [Alacritty](https://github.com/alacritty/alacritty)
++ **Windows Manager**: [i3-Gaps](https://github.com/resloved/i3)
++ **Theme & Colors**:           [Lighthaus Theme](https://github.com/lighthaus-theme)
++ **Alacritty theme**:     [Lighthaus Theme](https://github.com/lighthaus-theme/alacritty)
++ **Polybar Colors**:     [Lighthaus Theme](https://github.com/lighthaus-theme)
 + **Icons**:           [Paper](https://snwh.org/paper)
 
 
@@ -72,13 +72,13 @@ Desktop Dotfiles Repo
 | `mod+control+k` | Backlight +10 |
 | `mod+control+j` | Backlight -10 |
 | `mod+F1`        | Lock Screen |
-| `mod+shift+r`   | Reload i3 config |
+| `sup+shift+r`   | Reload i3 config |
 | `mod+num`       | Move to corresponding Workspace |
 | `Print`         | Screenshot |
 
 
 ## Basic Guidelines for setup
-+ Install i3-Gaps-Rounded, from [AUR](https://aur.archlinux.org/packages/i3-gaps-rounded-git/). Logout and choose i3-gaps to get started with setup prompt.
++ Install i3-Gaps, from [AUR](https://archlinux.org/packages/community/x86_64/i3-gaps/). Logout and choose i3-gaps to get started with setup prompt.
 + i3 config is found in `~/.config/i3/config`. Replace the config with the one in the repo here. For further options refer to the [official docs](https://i3wm.org/docs/userguide.html).
 + Install Polybar, from [AUR](https://aur.archlinux.org/packages/polybar/). All configs and scripts for Polybar are found in `~/.config/polybar/`. Polybar is launched using [launch.sh](https://github.com/Brutuski/Dotfiles/blob/master/.config/polybar/launch.sh) script executed by i3 config on startup ([_line141_](https://github.com/Brutuski/Dotfiles/blob/aa1afd24a7527cae670f380f3b5499026c2df987/.config/i3/config#L141)).
 + [Feh](https://wiki.archlinux.org/index.php/Feh) is used to set the wallpaper on startup. Executed by i3 on config on startup as well. Installed via [AUR](https://www.archlinux.org/packages/extra/x86_64/feh/).
@@ -87,7 +87,7 @@ Desktop Dotfiles Repo
 
 ## Screenshots
 + Taken using [Scrot](https://github.com/resurrecting-open-source-projects/scrot). `Print Scr` Key is mapped in the i3 config to execute scrot command. Installed via [AUR](https://www.archlinux.org/packages/community/x86_64/scrot/).</br>
-Wallpaper from  [Lighthaus Theme](https://github.com/lighthaus-theme) (*Coming Soon*)
+Wallpaper from  [Lighthaus Theme](https://github.com/lighthaus-theme/wallpapers)
 
 Desktop + [afetch](https://github.com/Brutuski/a-fetch)  ![Screenshot](https://raw.githubusercontent.com/Brutuski/Dotfiles/master/Screenshots/afetch.png)
 
