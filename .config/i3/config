@@ -155,6 +155,9 @@ exec_always setxkbmap -layout us,de
 # Start Dunst
 exec_always --no-startup-id dunst
 
+# Auto-Mount External Drives
+exec_always --no-startup-id udiskie &
+
 # __      ___                 _
 # \ \    / (_)               | |
 #  \ \  / / _ ___ _   _  __ _| |

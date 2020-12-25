@@ -126,8 +126,15 @@ alias ':L'='clear'
 
 alias 'cd..'='cd ..'
 
-# lsd aliases
+# lsd Aliases
 alias ls='lsd'
 alias 'ls -a'='lsd -a'
 alias 'ls -l'='lsd -l'
 alias 'ls -al'='lsd -al'
+
+# Git Aliases
+alias ga='git add'
+alias gc='git commit'
+alias gd='git diff'
+alias gp='git push origin'
+alias gs='git status'
